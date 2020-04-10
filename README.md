@@ -1,7 +1,6 @@
 Paola Franco
 
-Vision
-
+Vision:
 Linkear a la comunidad ecuatoriana a través de servicios digitales y productos que tengan que ver con reservas y mejorar la experiencia de usuario mostrando solo lo que el cliente en forma ordenada y rápida.
 
 
