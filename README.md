@@ -1,4 +1,3 @@
-#tICKETS MISION Y VISION
 
 Paola Franco
 
