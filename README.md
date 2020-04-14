@@ -18,5 +18,11 @@ Alejandro Lòpez
 Consolidarnos como líderes en el sector del transporte, ofreciendo tarifas competitivas en el mercado, dales todas las seguridades a nuestros clientes para que confíen en nuestro servicio.Por ende convertirnos en una agencia de reservación de tickets y ser un referente en nuestros país , ofreciendo calidad y garantía, basándonos en los valores de respeto y honestidad.
 
 Alexandra Obando
-Visión
+
+Visión:
 Brindar a los usuarios un servicio de confianza y una excelente atención y seguridad en cada viaje que realiza, con una información clara y precisa , para una gran satisfacción de nuestros clientes mediante una aplicación web diseñada para obtener viajes espectaculares.
+
+Paola Acosta
+
+Mision:
+Ofrecer un servicio personalizado de calidad y confianza a través de una aplicación digital con información clara y precisa de todas las provincias del país  a la cual tiene acceso con la plataforma de la App digital con precios cómodos y preferenciales por cada destino dependiendo el número de personas que utilicen la App.
