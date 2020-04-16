@@ -26,3 +26,12 @@ Paola Acosta
 
 Mision:
 Ofrecer un servicio personalizado de calidad y confianza a través de una aplicación digital con información clara y precisa de todas las provincias del país  a la cual tiene acceso con la plataforma de la App digital con precios cómodos y preferenciales por cada destino dependiendo el número de personas que utilicen la App.
+
+Sebastian Salazar
+
+Requisitos funcionales
+
+1) Decisión libre del cliente en horarios y fechas a viajar.
+2) Decisión libre del cliente al elegir un asiento para su viaje.
+3) Reserva sin fallos.
+4) Actualizar constantemente los precios de los tickets.
