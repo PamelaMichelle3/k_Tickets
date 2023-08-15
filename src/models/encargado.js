@@ -1,30 +1,30 @@
-const Encargado =(sequelize, type) =>{
-    return sequelize.define('encargados',{
-        id_encargado:{
-            type: type.INTEGER, 
-            primarykey: true,
+const encargado = (sequelize, type) => {
+    return sequelize.define('encargados', {
+        id_encargado: {
+            type: type.INTEGER,
+            primaryKey: true,
             autoIncrement: true
         },
-        nombresEncargado: type.STRING,
-        apellidosEncargado: type.STRING,
-        cedulaEncargadO: type.INTEGER,
-        sexoEncargado: type.STRING,
-        celularEncargado: type.STRING,
-        convencionalEncargado: type.STRING,
-     
-    crearEncargado: {
+        nombres_encargado: type.STRING,
+        apellido_encargado: type.STRING,
+        cedula_encargado: type.STRING,
+        sexo_encargado: type.STRING,
+       celular_encargado: type.STRING,
+       telefono_encargado: type.STRING,
+       
+
+        crearEncargado: {
             type: 'TIMESTAMP',
             defaultValue: type.literal('CURRENT_TIMESTAMP'),
-            allowNull: false 
+            allowNull: false
         },
         actualizarEncargado: {
             type: 'TIMESTAMP',
             defaultValue: type.literal('CURRENT_TIMESTAMP'),
             allowNull: false
-        }   
+        }
     }, {
-        timestamps: false, 
-
-    })
+        timestamps: false,
+    });
 }
-module.exports = Encargado  
+module.exports = encargado

@@ -1,36 +1,34 @@
-const Empleado =(sequelize, type) =>{
-    return sequelize.define('empleados',{
-        id_empleado:{
-            type: type.INTEGER, 
-            primarykey: true,
+const empleado = (sequelize, type) => {
+    return sequelize.define('empleados', {
+        id_empleado: {
+            type: type.INTEGER,
+            primaryKey: true,
             autoIncrement: true
         },
-        cedulaEmpleado: type.INTEGER,
-        nombresEmpleado: type.STRING,
-        apellidosEmpleado: type.STRING,
-        fecha_nacimientoEmpleado: type.DATE,
-        sexoEmpleado: type.STRING,
-        callepEmpleado: type.STRING,
-        callesEmpelado: type.STRING,
-        correoEmpleado: type.STRING,
-        celularEmpleado: type.INTEGER,
-        convencionalEmpleado: type.INTEGER,
-        areaEmpleado: type.STRING,
+        nombres_empleado: type.STRING,
+        apellido_empleado: type.STRING,
+        cedula_empleado: type.STRING,
+        fecha_nacimiento_empleado: type.STRING,
+        sexo_empleado: type.STRING,
+        calle_principal_empleado: type.STRING,
+        calle_secundaria: type.STRING,
+       email_empleado: type.STRING,
+       celular_empleado: type.STRING,
+       telefono_empleado: type.STRING,
+       area_empleado: type.STRING,
 
-    crearEmpleado: {
-            type: 'TIMESTAMP',
-            defaultValue: type.literal('CURRENT_TIMESTAMP'),
-            allowNull: false 
-        },
-    
-    actualizarEmpleado: {
+        crearEmpleado: {
             type: 'TIMESTAMP',
             defaultValue: type.literal('CURRENT_TIMESTAMP'),
             allowNull: false
-        }   
+        },
+        actualizarEmpleado: {
+            type: 'TIMESTAMP',
+            defaultValue: type.literal('CURRENT_TIMESTAMP'),
+            allowNull: false
+        }
     }, {
-        timestamps: false, 
-
-    })
+        timestamps: false,
+    });
 }
-module.exports = Empleado
+module.exports = empleado

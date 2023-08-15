@@ -3,7 +3,7 @@ const detalleTransporte =(sequelize, type) =>{
         id_detalletransporte:{
             type: type.INTEGER, 
             primarykey: true,
-            autoIncrement: true
+           
         },
         nombreCooperativaDetalleTransporte: type.STRING,
         tarifaDetalleTransporte: type.INTEGER,

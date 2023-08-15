@@ -1,21 +1,21 @@
-const licencia = (sequelize, type) => {
-    return sequelize.define('licencias', {
-        id_licencia: {
+const detalle_cooperativa = (sequelize, type) => {
+    return sequelize.define('detalle_cooperativas', {
+        id_detalle_cooperativa: {
             type: type.INTEGER,
             primaryKey: true,
             autoIncrement: true
         },
-        tipo_licencia: type.STRING,
-        fecha_emision_licencia: type.STRING,
-        fecha_vencimiento_licencia: type.STRING,
-      
+        nombres_detalle_cooperativa: type.STRING,
+        apellidos_detalle_cooperativa: type.STRING,
+        email_detalle_cooperativa: type.STRING,
+    
 
-        crearLicencia: {
+        crearDetalleCooperativa: {
             type: 'TIMESTAMP',
             defaultValue: type.literal('CURRENT_TIMESTAMP'),
             allowNull: false
         },
-        actualizarLicencia: {
+        actualizarDetalleCooperativa: {
             type: 'TIMESTAMP',
             defaultValue: type.literal('CURRENT_TIMESTAMP'),
             allowNull: false
@@ -24,4 +24,4 @@ const licencia = (sequelize, type) => {
         timestamps: false,
     });
 }
-module.exports = licencia
+module.exports = detalle_cooperativa

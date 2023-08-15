@@ -1,28 +1,27 @@
-const Bus =(sequelize, type) =>{
+const bus=(sequelize,type)=>{
     return sequelize.define('buses',{
         id_bus:{
-            type: type.INTEGER, 
-            primarykey: true,
-            autoIncrement: true
+            type:type.INTEGER,
+            primaryKey:true,
+            autoIncrement:true 
         },
-        nombreConductorBus: type.STRING,
-        capacidadBus: type.INTEGER,
-        horariosBus: type.DATETIME,
-        placaBus: type.INTEGER,
+        nombre_bus: type.STRING,
+        capacidas_bus: type.STRING,
+        horario_bus: type.STRING,
+       placa_bus: type.STRING,
 
-    crearBus: {
-            type: 'TIMESTAMP',
+        crearBus:{
+            type:'TIMESTAMP',
             defaultValue: type.literal('CURRENT_TIMESTAMP'),
-            allowNull: false 
+            allowNull:false
         },
-        actualizarBus: {
-            type: 'TIMESTAMP',
+        actualizarBus:{
+            type:'TIMESTAMP',
             defaultValue: type.literal('CURRENT_TIMESTAMP'),
-            allowNull: false
-        }   
+            allowNull:false
+        }
     }, {
-        timestamps: false, 
-
-    })
+        timestamps:false,
+    });
 }
-module.exports = Bus 
+module.exports = bus

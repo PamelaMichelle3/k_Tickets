@@ -23,100 +23,98 @@ sequelize.sync({ force: false })
 		console.log("tablas sincronizadas");
 	});
 
+	const busModel = require('../models/bus');
+	const choferModel = require('../models/chofer');
+	const ciudadModel = require('../models/ciudad');
+	const cooperativaModel = require('../models/cooperativa');
+	const detalleCooperativaModel = require('../models/detalle_cooperativa');
+	const detalleEncomiendaModel = require('../models/detalle_encomienda');
+	const detalleTransporteModel = require('../models/detalle_transporte');
+	const empleadoModel = require('../models/empleado');
+	const encargadoModel = require('../models/encargado');
+	const encomiendaDestinatarioModel = require('../models/encomienda_destinatario');
+	const encomiendaRemitenteModel = require('../models/encomienda_remitente');
+	const licenciaModel = require('../models/licencia');
+	const rutaModel = require('../models/ruta');
+	const terminalModel = require('../models/terminal');
 
-const busModelo = require('../models/bus')
-const detalletransporteModelo = require ('../models/detalleTransporte')
-const choferModelo= require ('../models/chofer')
-const licenciaModelo = require ('../models/licencia')
-const ciudadModelo = require ('../models/ciudad')
-const cooperativaModelo = require ('../models/cooperativa')
-const detallecooperativaModelo = require ('../models/detalleCooperativa')
-const encomiendadestinatarioModelo = require ('../models/encomiendaDestinatario.js')
-const encomiendaremitenteModelo = require ('../models/encomiendaRemitente')
-const detalleencomiendaModelo = require ('../models/detalleEncomienda')
-const empleadoModelo = require ('../models/empleado')
-const encargadoModelo = require ('../models/encargado')
-const rutaModelo = require ('../models/ruta')
-const terminalModelo = require ('../models/terminal')
 
 //sincronia
 
-const Bus = busModelo(sequelize, Sequelize)
-const detalleTrasporte =  detalletransporteModelo (sequelize, Sequelize)
-const Chofer = choferModelo (sequelize, Sequelize)
-const Licencia = licenciaModelo (sequelize, Sequelize)
-const Ciudad = ciudadModelo (sequelize, Sequelize)
-const Cooperativa = cooperativaModelo (sequelize, Sequelize)
-const detalleCooperativa = detallecooperativaModelo (sequelize, Sequelize)
-const encomiendaDestinatario = encomiendadestinatarioModelo (sequelize, Sequelize)
-const EncomiendaRemitente = encomiendaremitenteModelo ( sequelize, Sequelize)
-const detalleencomienda = detalleencomiendaModelo (sequelize, Sequelize)
-const Empleado = empleadoModelo (sequelize, Sequelize)
-const Encargado = encargadoModelo (sequelize, Sequelize)
-const Ruta = rutaModelo (sequelize, Sequelize)
-const Terminal = terminalModelo (sequelize, Sequelize)
+const bus =  busModel(sequelize, Sequelize)
+const chofer =  choferModel(sequelize, Sequelize)
+const ciudad =  ciudadModel(sequelize, Sequelize)
+const cooperativa =  cooperativaModel(sequelize, Sequelize)
+const detalle_cooperativa =  detalleCooperativaModel(sequelize, Sequelize)
+const detalle_encomienda =  detalleEncomiendaModel(sequelize, Sequelize)
+const detalle_transporte =  detalleTransporteModel(sequelize, Sequelize)
+const empleado =  empleadoModel(sequelize, Sequelize)
+const encargado =  encargadoModel(sequelize, Sequelize)
+const encomienda_destinatario =  encomiendaDestinatarioModel(sequelize, Sequelize)
+const encomienda_remitente =  encomiendaRemitenteModel(sequelize, Sequelize)
+const licencia =  licenciaModel(sequelize, Sequelize)
+const ruta =  rutaModel(sequelize, Sequelize)
+const terminal =  terminalModel(sequelize, Sequelize)
 
-Bus.hasMany(Chofer)
-Chofer.belongsTo(Bus)
+//relaciones
+bus.hasMany(chofer)
+chofer.belongsTo(bus)
 
-Bus.hasMany(EncomiendaRemitente)
-EncomiendaRemitente.belongsTo(Bus)
+bus.hasMany(encomienda_remitente)
+encomienda_remitente.belongsTo(bus)
 
-Cooperativa.hasMany(detalleCooperativa)
-detalleCooperativa.belongsTo(Cooperativa)
+cooperativa.hasMany(detalle_cooperativa)
+detalle_cooperativa.belongsTo(cooperativa)
 
-Cooperativa.hasMany(Encargado)
-Encargado.belongsTo(Cooperativa)
+cooperativa.hasMany(encargado)
+encargado.belongsTo(cooperativa)
 
-Cooperativa.hasMany(Bus)
-Bus.belongsTo(Cooperativa)
+cooperativa.hasMany(bus)
+bus.belongsTo(cooperativa)
 
-Cooperativa.hasMany(Ruta)
-Ruta.belongsTo(Cooperativa)
+cooperativa.hasMany(ruta)
+ruta.belongsTo(cooperativa)
 
-Cooperativa.hasMany(Terminal)
-Terminal.belongsTo(Cooperativa)
+cooperativa.hasMany(terminal)
+terminal.belongsTo(cooperativa)
 
-EncomiendaRemitente.hasMany(detalleencomienda)
-detalleencomienda.belongsTo(EncomiendaRemitente)
+encomienda_remitente.hasMany(detalle_encomienda)
+detalle_encomienda.belongsTo(encomienda_remitente)
 
-EncomiendaRemitente.hasMany(encomiendaDestinatario)
-encomiendaDestinatario.belongsTo(EncomiendaRemitente)
+encomienda_remitente.hasMany(encomienda_destinatario)
+encomienda_destinatario.belongsTo(encomienda_remitente)
 
-Licencia.hasMany(Chofer)
-Chofer.belongsTo(Licencia)
+licencia.hasMany(chofer)
+chofer.belongsTo(licencia)
 
-Ciudad.hasMany(Empleado)
-Empleado.belongsTo(Ciudad)
+ciudad.hasMany(empleado)
+empleado.belongsTo(ciudad)
 
-Ciudad.hasMany(Chofer)
-Chofer.belongsTo(Ciudad)
+ciudad.hasMany(chofer)
+chofer.belongsTo(ciudad)
 
-Terminal.hasMany(Ciudad)
-Ciudad.belongsTo(Terminal)
+terminal.hasMany(ciudad)
+ciudad.belongsTo(terminal)
 
-Ruta.hasMany(Bus)
-Bus.belongsTo(Ruta)
+ruta.hasMany(bus)
+bus.belongsTo(ruta)
 
-detalleTrasporte.hasMany(Bus)
-Bus.belongsTo(detalleTrasporte)
+detalle_transporte.hasMany(bus)
+bus.belongsTo(detalle_transporte)
 
- 
 module.exports = {
-
-Bus,
-Chofer,
-EncomiendaRemitente,
-Cooperativa,
-detalleCooperativa,
-Encargado,
-Ruta,
-Terminal,
-encomiendaDestinatario,
-Licencia, 
-Ciudad,
-Terminal,
-detalleTrasporte,
-Empleado
-
+	bus,
+	chofer,
+	ciudad,
+	cooperativa,
+	detalle_transporte,
+	detalle_cooperativa,
+	detalle_encomienda,
+	empleado,
+	encargado,
+	encomienda_remitente,
+	encomienda_destinatario,
+	ruta,
+	terminal,
+	licencia
 };

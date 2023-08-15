@@ -1,21 +1,21 @@
-const licencia = (sequelize, type) => {
-    return sequelize.define('licencias', {
-        id_licencia: {
+const detalle_transporte = (sequelize, type) => {
+    return sequelize.define('detalle_transportes', {
+        id_detalle_transporte: {
             type: type.INTEGER,
             primaryKey: true,
             autoIncrement: true
         },
-        tipo_licencia: type.STRING,
-        fecha_emision_licencia: type.STRING,
-        fecha_vencimiento_licencia: type.STRING,
+        nombres_cooperativa_detalle_transporte: type.STRING,
+        tarifa_detalle_transporte: type.STRING,
+        nombre_copiloto_detalle_transporte: type.STRING,
       
 
-        crearLicencia: {
+        crearDetalleTransporte: {
             type: 'TIMESTAMP',
             defaultValue: type.literal('CURRENT_TIMESTAMP'),
             allowNull: false
         },
-        actualizarLicencia: {
+        actualizarDetalleTransporte: {
             type: 'TIMESTAMP',
             defaultValue: type.literal('CURRENT_TIMESTAMP'),
             allowNull: false
@@ -24,4 +24,4 @@ const licencia = (sequelize, type) => {
         timestamps: false,
     });
 }
-module.exports = licencia
+module.exports = detalle_transporte

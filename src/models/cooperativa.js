@@ -1,29 +1,30 @@
-const Cooperativa =(sequelize, type) =>{
-    return sequelize.define('cooperativas',{
-        id_cooperativa:{
-            type: type.INTEGER, 
-            primarykey: true,
+const cooperativa = (sequelize, type) => {
+    return sequelize.define('cooperativas', {
+        id_cooperativa: {
+            type: type.INTEGER,
+            primaryKey: true,
             autoIncrement: true
         },
-        nombreCooperativa: type.STRING,
-        nro_identificacion_tributariaCooperativa: type.INTEGER,
-        nro_transportesCooperativa: type.INTEGER,
-        horarios_atencionCooperativa: type.DATETIME,
-        informacion_contactosCooperativa: type.STRING,
-        emailCooperativa: type.STRING,
-    crearCooperativa: {
+        nombres_cooperativa: type.STRING,
+        numero_identificacion_cooperativa: type.STRING,
+        numero_transporte_cooperativa: type.STRING,
+        horario_cooperativa: type.STRING,
+        contactos_cooperativa: type.STRING,
+        email_cooperativa: type.STRING,
+    
+
+        crearCooperativa: {
             type: 'TIMESTAMP',
             defaultValue: type.literal('CURRENT_TIMESTAMP'),
-            allowNull: false 
+            allowNull: false
         },
         actualizarCooperativa: {
             type: 'TIMESTAMP',
             defaultValue: type.literal('CURRENT_TIMESTAMP'),
             allowNull: false
-        }   
+        }
     }, {
-        timestamps: false, 
-
-    })
+        timestamps: false,
+    });
 }
-module.exports = Cooperativa 
+module.exports = cooperativa

@@ -1,34 +1,33 @@
-const Chofer =(sequelize, type) =>{
+const chofer=(sequelize,type)=>{
     return sequelize.define('choferes',{
         id_chofer:{
-            type: type.INTEGER, 
-            primarykey: true,
-            autoIncrement: true
+            type:type.INTEGER,
+            primaryKey:true,
+            autoIncrement:true 
         },
-        cedulaChofer: type.INTEGER,
-        nombresChofer: type.STRING,
-        apellidosChofer: type.STRING,
-        sexoChofer: type.STRING,
-        estado_civilChofer: type.STRING,
-        fecha_nacimientoChofer: type.DATE,
-        direccionChofer: type.STRING,
-        emailChofer: type.STRING,
-        celularChofer: type.INTEGER,
+        cedula_chofer: type.STRING,
+        nombres_chofer: type.STRING,
+        apellidos_chofer: type.STRING,
+       sexo_chofer: type.STRING,
+       estado_civil_chofer: type.STRING,
+       fecha_nacimiento_chofer : type.STRING,
+       direccion_chofer : type.STRING,
+       email_chofer : type.STRING,
+       celular_chofer : type.STRING,
 
-    crearChofer: {
-            type: 'TIMESTAMP',
+
+        crearChofer:{
+            type:'TIMESTAMP',
             defaultValue: type.literal('CURRENT_TIMESTAMP'),
-            allowNull: false 
+            allowNull:false
         },
-    
-    actualizarChofer: {
-            type: 'TIMESTAMP',
+        actualizarChofer:{
+            type:'TIMESTAMP',
             defaultValue: type.literal('CURRENT_TIMESTAMP'),
-            allowNull: false
-        }   
+            allowNull:false
+        }
     }, {
-        timestamps: false, 
-
-    })
+        timestamps:false,
+    });
 }
-module.exports = Chofer
+module.exports = chofer
