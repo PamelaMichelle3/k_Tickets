@@ -1,0 +1,74 @@
+body {
+    background-image: url(http://localhost:4200/img/login.jpg);
+    background-repeat: no-repeat;
+    height: 103vh;
+    background-size: cover;
+    background-position: center ;
+}
+
+header {
+    background-color:rgb(81, 108, 228);
+    background-image: url(https://o.remove.bg/downloads/e429a066-f794-4e17-8c35-7647a18d24e0/logo-removebg-preview.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 3%;
+    border: 2px solid #000000;
+    padding: 35px;
+   
+  }
+
+#container {
+    background-color: rgba(255, 255, 255, 0.8); 
+    border-radius: 12px;
+    padding: 100px;
+    width: 300px;
+    height: 70%;
+    position: absolute;
+    top: 20%;
+    left: 35%;
+   
+}
+#cuadrado {
+    width: 95%;
+    height: 80%;
+    background-color: #4a73cc54;
+    position: absolute;
+    top: 15%;
+    left: 3%;
+    border-radius: 2%;
+}
+
+h1 {
+    font-weight: 10%;
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    
+}
+
+#input-box1 {
+    font-weight: 10%;
+    position:relative;
+    top: 30%;
+    left: -70%;
+
+}
+
+#input-box2 {
+    font-weight: 10%;
+    position: absolute;
+    top: 43%;
+    left: 10%;
+   
+}
+
+.boton {
+    border-radius: 20px;
+    padding: 8px;
+    background-color: #5299f5;
+    width: 105px;
+    color: white;
+    margin: 195px 0px;
+    cursor: pointer;
+    border-color: rgb(255, 255, 255);
+}
