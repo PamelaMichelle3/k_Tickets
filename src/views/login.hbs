@@ -2,25 +2,31 @@
 <from action ="/"method="post">
 <title>Inicio de Sesion</title>
 <body>
-    <div id="cuadrado"></div>
-     <header>
-    <div id="container">
-       <h1>Iniciar Sesion </h1>
-        <form action="" method="POST" id="form">
-            <div id="input-box1">
-                <label>Usuario:</label>
-                <input type="email" name="correo_electronico" placeholder="ejemplo@gmail.com" required />
+            <div class="contenedor">
+                <img class="imagen" src="/img/login.jpg" alt="">
+                <img class="hogar" src="/img/hogar.png" alt="">
+                <img class="desbloquear" src="/img/desbloquear.png" alt="">
+                <img class="usuario" src="/img/usuario.png" alt="">
+
+                 <h1>Inicio de Sesión</h1>
+                 <form>
+
+            <div id="input-box">
+                <input type="email" name="correo_electronico" placeholder="Usuario" required />
             </div>
-            <div id="input-box2">
-                <label>Contraseña:</label>
-                <input type="password" name="password_administrador" placeholder="*****" required />
+            <div id="input-box">
+                <input type="password" name="password_administrador" placeholder="Contraseña" required />
             </div>
-            <div id="boton">
-                <input class="boton" type="submit" value="ACCEDER">
+            <div class="check">
+                <label><input type="checkbox">
+                Recordar Usuario y Contraseña
+                </label>
             </div>
-    
-    </header>
+            <div id="input-box">
+                    <input type="submit" value="Iniciar sesión" />
+                </div>
         </form>
     </div>
-</body> 
+            
+</body>   
 </from>
