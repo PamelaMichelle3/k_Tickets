@@ -1,0 +1,125 @@
+<link rel="stylesheet" href="/src/public/css/Encomienda/listar.css">
+<form action="detalle_encimienda/lista/1" method="get"></form>
+<head>
+    <div id="contendodrhe">
+        <div>
+            <div class="navbar">
+                <div id="imagen">
+                    <img src="/img/logon.png"></img></div>
+                    <a id="inicio" href="#">Inicio</a>
+                    <button id="boton" type="button" href="#">Ingresar</button>
+            </div>
+    </div>
+</head>
+<h1>Registro de Encomiendas</h1>
+<div id="contenedor">
+    
+    <div class="row">
+        {{#each lista}}
+        <div id="tarjeta">
+            <u><h2>Remitente</h2></u>
+            <div>
+                <p>{{id_encomienda_remitente}}</p>
+            </div>
+            <div>
+                <p>{{nombres_encomienda_remitente}}</p>
+            </div>
+            <div>
+                <p>{{cedula_encomienda_remitente}}</p>
+            </div>
+            <div>
+                <p>{{telefono_encomienda_remitente}}</p>
+            </div>
+            <div>
+                <p>{{email_encomienda_remitente}}</p>
+            </div>
+            <div>
+                <div>
+                    <a href="/encomienda_remitente/editar/{{id_encomienda_remitente}}"><button type="button">Editar</button></a>
+                </div></p>
+                <div>
+                    <a href="/encomienda_remitente/eliminar/{{id_encomienda_remitente}}"><button type="button" style="background-color: red;">Eliminar</button></a>
+                </div></p>
+            </div>
+        </div>
+
+        <div id="tarjeta">
+            <u><h2>Destinatario</h2></u>
+            <div>
+                <p>{{id_encomienda_remitente}}</p>
+            </div>
+            <div>
+                <p>{{nombres_encomienda_remitente}}</p>
+            </div>
+            <div>
+                <p>{{cedula_encomienda_remitente}}</p>
+            </div>
+            <div>
+                <p>{{telefono_encomienda_remitente}}</p>
+            </div>
+            <div>
+                <p>{{email_encomienda_remitente}}</p>
+            </div>
+            <div>
+                <div>
+                    <a href="/encomienda_remitente/editar/{{id_encomienda_remitente}}"><button type="button">Editar</button></a>
+                </div></p>
+                <div>
+                    <a href="/encomienda_remitente/eliminar/{{id_encomienda_remitente}}"><button type="button" style="background-color: red;">Eliminar</button></a>
+                </div></p>
+            </div>
+        </div>
+
+
+        <div id="tarjeta">
+            <u><h2>Datos de envio</h2></u>
+            <div>
+                <p>{{id_encomienda_remitente}}</p>
+            </div>
+            <div>
+                <p>{{nombres_encomienda_remitente}}</p>
+            </div>
+            <div>
+                <p>{{cedula_encomienda_remitente}}</p>
+            </div>
+            <div>
+                <p>{{telefono_encomienda_remitente}}</p>
+            </div>
+            <div>
+                <p>{{email_encomienda_remitente}}</p>
+            </div>
+            <div>
+                <div>
+                    <a href="/encomienda_remitente/editar/{{id_encomienda_remitente}}"><button type="button">Editar</button></a>
+                </div></p>
+                <div>
+                    <a href="/encomienda_remitente/eliminar/{{id_encomienda_remitente}}"><button type="button" style="background-color: red;">Eliminar</button></a>
+                </div></p>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>
+
+<footer id="footer" class="">
+      <div class="container">
+        <div class="row text-left">
+          <div class="contact">
+            <p>Contactanos</p>
+            <img id="btnwasa" src="/img/wasa.png" alt=""><br>
+            <img id="btnmail" src="/img/mail.png" alt=""><br>
+            <img id="btntelef" src="/img/telef.png" alt="">
+          </div>
+          <div id="destin">
+            <p>Destinos</p><br>
+            <a>Playa</a><br>
+            <a>Montaña</a><br>
+            <a>Inolvidables eventos</a>
+          </div>
+          <div class="soport">
+            <p>Soporte</p>
+            
+          </div>
+        </div>
+      </div>
+</footer>
