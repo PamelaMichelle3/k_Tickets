@@ -2,64 +2,67 @@ const cooperativaCtl = {}
 const sql = require('../Database/dataBase.sql')
 const orm = require('../Database/dataBase.orm')
 
-
-cooperativaCtl.Mostrar = (req, res) => {
-    res.render('cooperativa/agregar');
+cooperativaCtl.mostrar = (req, res) => {
+    res.render('cooperativas/agregar');
 }
 
-cooperativaCtl.mandar = async(req, res)=>{
-    const { nombre_cooperativa, nro_identificacion_tributaria, nro_transportes, horarios_atencion, informacion_contactos, email} = req.body
-    const nuevacooperativa ={
-        nombre_cooperativa, 
-        nro_identificacion_tributaria, 
-        nro_transportes, 
-        horarios_atencion, 
-        informacion_contactos, 
-        email
+//mandar
+cooperativaCtl.mandar = async (req, res) => {
+    const id = req.user.id_terminal
+    const { nombres_cooperativa, numero_identificacion_cooperativa, numero_transporte_cooperativa,horario_cooperativa,contactos_cooperativa,email_cooperativa} = req.body
+    const nuevoEnvio = {
+        nombres_cooperativa,
+        numero_identificacion_cooperativa,
+        numero_transporte_cooperativa,
+        horario_cooperativa,
+        contactos_cooperativa,
+        email_cooperativa
     }
-    await orm.cooperativa.create(nuevacooperativa)
-    req.flash('success', 'Guardado con exito')
-    res.redirect('/cooperativa/lista');
+    await orm.cooperativa.create(nuevoEnvio)
+    req.flash('success', 'Guardado exitosamente')
+    res.redirect('/cooperativas/listar/' + id)
 }
 
-cooperativa.lista = async(req, res) => {
-    const lista = await sql.query('select * from cooperativa')
-    res.render('cooperativa/lista', { lista })
+cooperativaCtl.listar = async (req, res) => {
+    const lista = await sql.query('select * from cooperativas')
+    res.render('cooperativas/listar', { lista })
 }
 
-cooperativa.traer = async(req, res) => {
+//traer datos
+cooperativaCtl.traer = async (req, res) => {
     const ids = req.params.id
-    const lista = await sql.query('select * from cooperativa where id_cooperativa=?', [ids])
-    res.render('cooperativa/editar', { lista })
+    const lista = await sql.query('select * from cooperativas where id_cooperativa =?', [ids])
+    res.render('cooperativas/editar', { lista })
 }
 
-
-cooperativa.actualizar = async(req, res) => {
-
-    const { id_cooperativa, nombre_cooperativa, nro_identificacion_tributaria, nro_transportes, horarios_atencion, informacion_contactos, email} = req.body
-    const nuevacooperativa = {
-        nombre_cooperativa, 
-        nro_identificacion_tributaria, 
-        nro_transportes, 
-        horarios_atencion, 
-        informacion_contactos, 
-        email
+cooperativaCtl.actualizar = async (req, res) => {
+    const id = req.user.id_terminal
+    const ids = req.params.id
+    const { nombres_cooperativa, numero_identificacion_cooperativa, numero_transporte_cooperativa,horario_cooperativa,contactos_cooperativa,email_cooperativa} = req.body
+    const nuevoEnvio = {
+        nombres_cooperativa,
+        numero_identificacion_cooperativa,
+        numero_transporte_cooperativa,
+        horario_cooperativa,
+        contactos_cooperativa,
+        email_cooperativa
     }
-    await orm.cooperativa.findOne({ where: { id_cooperativa: id_cooperativa } })
+    await orm.cooperativa.findOne({ where: { id_cooperativa: ids } })
         .then(actualizar => {
-            actualizar.update(nuevacooperativa)
+            actualizar.update(nuevoEnvio)
         })
-    req.flash('success', 'Actualizado con éxito')
-    res.redirect('/cooperativa/lista')
+    req.flash('success', 'Actualizado exitosamente')
+    res.redirect('/cooperativas/listar/' + id);
 }
-
-cooperativa.eliminar = async(req, res) => {
+cooperativaCtl.eliminar = async (req, res) => {
     const ids = req.params.id
+    const id = req.user.id_usuario
     await orm.cooperativa.destroy({ where: { id_cooperativa: ids } })
         .then(() => {
-            req.flash('success', 'Eliminado con éxito')
-            res.redirect('/cooperativa/lista')
+            req.flash('success', 'Eliminado exitosamente')
+            res.redirect('/cooperativas/listar/' + id);
         })
 }
 
-module.exports  = cooperativaCtl
+
+module.exports = cooperativaCtl

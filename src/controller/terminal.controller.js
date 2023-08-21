@@ -2,62 +2,65 @@ const terminalCtl = {}
 const sql = require('../Database/dataBase.sql')
 const orm = require('../Database/dataBase.orm')
 
-
-terminalCtl.Mostrar = (req, res) => {
-    res.render('terminal/agregar');
+terminalCtl.mostrar = (req, res) => {
+    res.render('terminales/agregar');
 }
 
-terminalCtl.mandar = async(req, res)=>{
-    const { nombret, callept, callest, username, contraseña} = req.body
-    const nuevoTerminal ={
-        nombret, 
-        callept, 
-        callest, 
-        username, 
-        contraseña
+//mandar
+terminalCtl.mandar = async (req, res) => {
+    const id = req.user.id_terminal
+    const { nombre_terminal,calle_principal_terminal,calle_secundaria_terminal,username_terminal,password_terminal } = req.body
+    const nuevoEnvio = {
+        nombre_terminal,
+        calle_principal_terminal,
+        calle_secundaria_terminal,
+        username_terminal,
+        password_terminal
     }
-    await orm.terminal.create(nuevoTerminal)
-    req.flash('success', 'Guardado con exito')
-    res.redirect('/terminal/lista');
+    await orm.terminal.create(nuevoEnvio)
+    req.flash('success', 'Guardado exitosamente')
+    res.redirect('/terminales/listar/' + id)
 }
 
-terminal.lista = async(req, res) => {
-    const lista = await sql.query('select * from terminal')
-    res.render('terminal/lista', { lista })
+terminalCtl.listar = async (req, res) => {
+    const lista = await sql.query('select * from terminales')
+    res.render('terminales/listar', { lista })
 }
 
-terminal.traer = async(req, res) => {
+//traer datos
+terminalCtl.traer = async (req, res) => {
     const ids = req.params.id
-    const lista = await sql.query('select * from terminal where id_terminal=?', [ids])
-    res.render('terminal/editar', { lista })
+    const lista = await sql.query('select * from terminales where id_terminal =?', [ids])
+    res.render('terminales/editar', { lista })
 }
 
-
-terminal.actualizar = async(req, res) => {
-
-    const { id_terminal, nombret, callept, callest, username, contraseña} = req.body
-    const nuevoTerminal = {
-        nombret, 
-        callept, 
-        callest, 
-        username, 
-        contraseña
+terminalCtl.actualizar = async (req, res) => {
+    const id = req.user.id_terminal
+    const ids = req.params.id
+    const { nombre_terminal,calle_principal_terminal,calle_secundaria_terminal,username_terminal,password_terminal } = req.body
+    const nuevoEnvio = {
+        nombre_terminal,
+        calle_principal_terminal,
+        calle_secundaria_terminal,
+        username_terminal,
+        password_terminal
     }
-    await orm.terminal.findOne({ where: { id_terminal: id_terminal } })
+    await orm.terminal.findOne({ where: { id_terminal: ids } })
         .then(actualizar => {
-            actualizar.update(nuevoTerminal)
+            actualizar.update(nuevoEnvio)
         })
-    req.flash('success', 'Actualizado con éxito')
-    res.redirect('/terminal/lista')
+    req.flash('success', 'Actualizado exitosamente')
+    res.redirect('/terminales/listar/' + id);
 }
-
-terminal.eliminar = async(req, res) => {
+terminalCtl.eliminar = async (req, res) => {
     const ids = req.params.id
-    await orm.terminal.destroy({ where: { id_terminal: ids } })
+    const id = req.user.id_usuario
+    await orm.ruta.destroy({ where: { id_terminal: ids } })
         .then(() => {
-            req.flash('success', 'Eliminado con éxito')
-            res.redirect('/terminal/lista')
+            req.flash('success', 'Eliminado exitosamente')
+            res.redirect('/terminal/listar/' + id);
         })
 }
 
-module.exports  = terminalCtl
+
+module.exports = terminalCtl
