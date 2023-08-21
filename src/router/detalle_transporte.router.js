@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const { mostrar, mandar, listar, actualizar, eliminar, traer} = require("../controller/rutas.controller");
+const { mostrar, mandar, listar, actualizar, eliminar, traer} = require("../controller/detalle_transporte.controller");
 
 
 router.get('/agregar/:id',mostrar);
