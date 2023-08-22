@@ -79,8 +79,14 @@ app.use(express.static(path.join(__dirname, 'public')));
 //public 
 
 //routers
-//app.use(require('./router/login.router'))
-//app.use(require('./router/empleados.router'))
-app.use(require('./router/inicio.router'))
+
+app.use(require('./router/empleado.router'))
+app.use(require('./router/inicio.router' ))
+app.use(require('./router/cooperativa.router'))
+app.use(require('./router/login.router'))
+app.use(require('./router/encomienda_destinatario.router'))
+app.use(require('./router/encomienda_remitente.router'))
+
+
 
 module.exports = app;

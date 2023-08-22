@@ -1,0 +1,121 @@
+<link rel="stylesheet" href="/css/empleados/empleados.css">
+<from action="/"method="post">
+<body>
+<head>
+  <head>
+    <div id="contendodrhe">
+        <div>
+            <div class="navbar">
+                <div id="imagen">
+                    <img src="/img/logon.png"></img></div>
+                    <a id="inicio" href="/views/inicio.hbs">Inicio</a>
+                    <a id="administrador" href="#">Administrador</a>
+                    <img id="img2" src="/img/perfil.png" alt="">
+            </div>
+    </div>
+</head>
+  <div id="container">
+    <h2>Registro de Empleados</h2>
+    <u><h3>Datos personales</h3></u>
+    
+    <form action="#" method="post">
+      <label id="name" for="nombre">Nombre</label> <br>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label id="apelli" for="apellido">Apellido:</label>
+      <input type="text" id="apellido" name="apellido" required>
+
+      <label id="date" for="fecha_nacimiento">Fecha de Nacimiento:</label> 
+      <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+        <br> <br>
+      <label id="numce" for="cedula">Número de Cédula:</label> <br>
+      <input type="text" id="cedula" name="cedula" required>
+
+      <label id="sexo" for="sexo">Sexo:</label>
+      <select id="sexoSele" name="sexo" required>
+        <option value="masculino">Masculino</option>
+        <option value="femenino">Femenino</option>
+        <option value="otro">Otro</option> <br>
+
+      </select> <br> <br>
+    </form> <br>
+
+    <u><h3>Lugar de residencia</h3></u>
+
+      <label id="canton" for="canton">Canton</label> <br>
+      <input type="text" id="cantonIn" name="canton" required>
+
+      <label id="pronvin" for="apellido">Provincia</label>
+      <input type="text" id="provincia" name="provincia" required>
+
+      <label id="sect" for="fecha_nacimiento">Sector</label> 
+      <input type="text" id="sector" name="sector" required>
+        <br> <br>
+      <label id="calleSe" for="nombre">Calle secundaria</label> <br>
+      <input type="text" id="callesecu" name="calleS" required>
+
+      <label id="calleP" for="nombre">Calle principal</label>
+      <input type="text" id="callepri" name="calleP" required>
+        <br> <br>
+
+      <u><h3>Contactos</h3></u>
+
+      <label id="telfC" for="telefonocelu">Telefono Celular</label> <br>
+      <input type="text" id="telefonoC" name="telefonocelu" required>
+
+      <label id="teleCo" for="telefonoconv">Telefono Convencional</label>
+      <input type="text" id="telefonoCo" name="telefonoconv" required>
+
+      <label id="email" for="emailCorreo">Email@</label> 
+      <input type="text" id="Email" name="Email" required>
+
+      <label id="area" for="Area">Area:</label> <br> <br>
+      <select id="AreaTra" name="area" required>
+        <option value="chofer">Chofer</option>
+        <option value="bodegero">Bodegero</option>
+        <option value="buses">Buses</option>
+      </select>
+        <br>
+        <br>
+      <input id="cancel" type="submit" value="Cancelar">
+      <input id="save" type="submit" value="Registrar">
+  </div>
+
+<footer id="footer" class="">
+      <div class="container">
+        <div class="row text-left">
+          <div id="contact">
+            <p>Contactanos</p>
+            <img id="btnwasa" src="/img/wasa.png" alt=""><br>
+            <img id="btnmail" src="/img/mail.png" alt=""><br>
+            <img id="btntelef" src="/img/telef.png" alt="">
+            <b><a>Whatsapp</a><br></b>
+            <a>09 3456 7890</a><br> <br>
+            <b><a>Email</a></b><br> 
+            <a>hola@tickets.com</a> <br> <br>
+            <b><a>Call Center</a></b><br> 
+            <a>+59322 3456 7891</a><br> <br>
+          </div>
+          <div id="destin">
+            <p>Destinos</p>
+            <a href="">Playa</a><br> <br>
+            <a href="">Montaña</a><br> <br>
+            <a href="">Inolvidables eventos</a>
+          </div>
+          <div id="soport">
+            <p>Soporte</p>
+            <a href="">Preguntas frecuentes</a><br> <br>
+            <a href="">Política de privacidad</a><br> <br>
+            <a href="">Términos y condiciones</a><br> <br>
+            <a href="">Inolvidables eventos</a> <br>
+          </div>
+          <div id="follow">
+           <b> <p>Síguenos</p></b>
+           <a href=""><img id="ig" src="/img/insta.png" alt=""></a>
+           <a href=""><img id="fb" src="/img/fb.png" alt=""></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+</body>
+</from>

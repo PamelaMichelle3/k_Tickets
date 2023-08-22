@@ -1,0 +1,116 @@
+<link rel="stylesheet" href="/css/cooperativa/cooperativa.css">
+<from action="/"method="post">
+<body>
+<head>
+    <div id="contendodrhe">
+        <div>
+            <div class="navbar">
+                <div id="imagen">
+                    <img src="/img/logon.png"></img></div>
+                    <a id="inicio" href="/src/views/inicio.hbs">Inicio</a>
+                    <a id="administrador" href="#">Administrador</a>
+                    <img id="img2" src="/img/perfil.png" alt="">
+            </div>
+    </div>
+</head>
+  <div id="container">
+    <h2>Registro de Cooperativas</h2>
+    <u><h3>Datos de la cooperativa</h3></u>
+    
+    <form action="#" method="post">
+      <label id="nameCoop" for="nombre">Nombre de la cooperativa</label> <br>
+      <input type="text" id="nombrecoopera" name="nombre" required>
+
+      <label id="numero" for="numero">Numero de identificacion tributaria</label>
+      <input type="text" id="numeroIdent" name="numero" required>
+
+      <label id="numTrans" for="numerotransporte">Numero de transportes (buses)</label> 
+      <input type="text" id="numeroTrans" name="numerotrans" required>
+        <br> <br> 
+
+        <label id="infoConta" for="info">Informacion de contactos</label> <br> <br>
+      <input type="text" id="informacionContac" name="info" required>
+
+        <label id="horario" for="horarios">Horarios de atencion</label>  
+        <select id="horarioAte" name="horarios" required>
+          <option value="masculino">7:00 am a 13:00pm</option>
+          <option value="femenino">15:00pm a 18:00pm</option>
+          <option value="otro">19:00pm a 23:00pm</option>
+
+       <br>
+
+      </select> <br> <br>
+    </form> <br>
+
+    <u><h3>Datos del encargado</h3></u>
+
+      <label id="nombr" for="nombres">Nombres</label> <br>
+      <input type="text" id="nombres" name="nombres" required>
+
+      <label id="apelli" for="apellido">Apellidos</label>
+      <input type="text" id="apellido" name="apellido" required>
+
+      <label id="numeroCedu" for="numerocedula">Numero de cedula</label> 
+      <input type="text" id="numCedu" name="numerocedula" required>
+      
+      <label id="sexo" for="sexo">Area:</label> <br> <br> <br> <br>
+      <select id="sexoSele" name="sexo" required>
+        <option value="chofer">Hombre</option>
+        <option value="bodegero">Mujer</option>
+        <option value="buses">Otro</option>
+      </select> <br> <br>
+      <u><h3>Contactos</h3></u>
+
+      <label id="telfC" for="telefonocelu">Telefono Celular</label> <br>
+      <input type="text" id="telefonoC" name="telefonocelu" required>
+
+      <label id="teleCo" for="telefonoconv">Telefono Convencional</label>
+      <input type="text" id="telefonoCo" name="telefonoconv" required>
+
+      <label id="email" for="emailCorreo">Email@</label> 
+      <input type="text" id="Email" name="Email" required>
+        <br>
+        <br>
+        <br>
+      <input id="cancel" type="submit" value="Cancelar">
+      <input id="save" type="submit" value="Registrar">
+  </div>
+
+<footer id="footer" class="">
+      <div class="container">
+        <div class="row text-left">
+          <div id="contact">
+            <p>Contactanos</p>
+            <img id="btnwasa" src="/img/wasa.png" alt=""><br>
+            <img id="btnmail" src="/img/mail.png" alt=""><br>
+            <img id="btntelef" src="/img/telef.png" alt="">
+            <b><a>Whatsapp</a><br></b>
+            <a>09 3456 7890</a><br> <br>
+            <b><a>Email</a></b><br> 
+            <a>hola@tickets.com</a> <br> <br>
+            <b><a>Call Center</a></b><br> 
+            <a>+59322 3456 7891</a><br> <br>
+          </div>
+          <div id="destin">
+            <p>Destinos</p>
+            <a href="">Playa</a><br> <br>
+            <a href="">Montaña</a><br> <br>
+            <a href="">Inolvidables eventos</a>
+          </div>
+          <div id="soport">
+            <p>Soporte</p>
+            <a href="">Preguntas frecuentes</a><br> <br>
+            <a href="">Política de privacidad</a><br> <br>
+            <a href="">Términos y condiciones</a><br> <br>
+            <a href="">Inolvidables eventos</a> <br>
+          </div>
+          <div id="follow">
+           <b> <p>Síguenos</p></b>
+           <a href=""><img id="ig" src="/img/insta.png" alt=""></a>
+           <a href=""><img id="fb" src="/img/fb.png" alt=""></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+</body>
+</from>

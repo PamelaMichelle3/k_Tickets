@@ -23,17 +23,19 @@
   }
 
   .navbar a {
+    position: relative;
     float: left;
     display: block;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    left: 140px;
   }
 
   .navbar a:hover {
-    background-color: #ddd;
-    color: black;
+    background-color: #1D202B;
+    color: #F28705;
   }
 #imagen{
   width: 100%;
@@ -47,6 +49,15 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+}
+#img2{
+  position: relative;
+  width: 67px;
+  height: 63px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  right: 60px;
 }
 #boton{
   width: 160px;
