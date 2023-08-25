@@ -1,0 +1,135 @@
+<link rel="stylesheet" href="/css/chofer/agregar.css">
+<form action="/chofer/agregar"method="POST">
+<body>
+<head>
+         <div id="contendodrhe">
+        <div>
+            <div class="navbar">
+                <div id="imagen">
+                    <img src="/img/logon.png"></img></div>
+                    <a href="/inicio">Inicio</a>
+                    <a id="administrador" href="#">Administrador</a>
+                    <img id="img2" src="/img/perfil.png" alt="">
+            </div>
+    </div>
+         
+</head>
+  <div id="container">
+    <img class="fondo" src="/img/registro de choferes.jpg" alt="">
+    <h2>Registro De Choferes</h2>
+    <u><h3>Datos personales</h3></u>
+    <form action="#" method="post">
+      <label id="numce" for="cedula">Cedula</label> <br>
+      <input type="number" id="cedula" name="cedula_chofer" required> 
+
+      <label id="name" for="nombre">Nombres</label>
+      <input type="text" id="nombre" name="nombres_chofer" required>
+
+      <label id="apelli" for="apellido">Apellidos</label> 
+      <input type="text" id="apellido" name="apellidos_chofer" required>
+        <br> <br>
+
+      <label id="sexo" for="sexo">Sexo</label>
+      <select id="sexoSele" name="sexo_chofer" required>
+        <option value="masculino">Masculino</option>
+        <option value="femenino">Femenino</option>
+        <option value="otro">Otro</option> 
+      </select>
+
+      <label id="estado" for="estado">Estado Civil</label>
+      <select id="estadoCivil" name="estado_civil_chofer" required>
+        <option value="soltero/a">Soltero/a</option>
+        <option value="casado/a">Casado/a</option>
+        <option value="divorciado/a">Divorciado/a</option>
+        <option value="viudo/a">Viudo/a</option> <br>
+      </select> <br> <br>
+
+      <label id="date" for="fecha_nacimiento">Fecha de Nacimiento</label> 
+      <input type="date" id="fecha_nacimiento" name="fecha_nacimiento_chofer" required>
+    </form> <br>
+
+
+     <!-- <label id="pronvin" for="apellido">Provincia</label>
+      <input type="text" id="provincia" name="provincia" required>
+
+      <label id="parroquia" for="parroquia">Parroquia</label> <br>
+      <input type="text" id="parroquiaIn" name="parroquia" required>
+
+      <label id="canton" for="canton">Canton</label> <br>
+      <input type="text" id="cantonIn" name="canton" required> -->
+
+
+      <label id="direccion" for="direccion">Direccion</label> <br>
+      <input type="text" id="direccionn" name="direccion_chofer" required>
+      
+      <label id="licencia" for="licencia">Tipo de Licencia</label>
+      <select id="tipolicencia" name="tipo_licencia" required>
+        <option value="tipo A">Tipo A</option>
+        <option value="tipo B">Tipo B</option>
+        <option value="tipo C">Tipo C</option>
+      </select> 
+
+      <label id="email" for="emailCorreo">Email@</label> 
+      <input type="text" id="Email" name="email_chofer" required>
+
+      <label id="emision" for="emision">Fecha de Emisón</label>
+      <input type="date" id="fechaemision" name="fecha_emision_licencia" required>
+        <br> <br>
+
+        <label id="vencimiento" for="vencimiento">Fecha de Vencimiento</label>
+      <input type="date" id="fechavencimiento" name="fecha_vencimiento_licencia" required>
+        <br> <br>
+
+
+      <label id="telfC" for="telefonocelu">Telefono Celular</label> <br>
+      <input type="number" id="telefonoC" name="celular_chofer" required>
+
+        <br>
+        <br>
+     <div class="registrarse">
+          <button (click)="crearRegistro()">Registrar</button>
+        </div>
+        <div class="cancelar">
+          <button (click)="volverRegistro()">Cancelar</button>
+        </div>
+  </div>
+
+<footer id="footer" class="">
+      <div class="container">
+        <div class="row text-left">
+          <div id="contact">
+            <p>Contactanos</p>
+            <img id="btnwasa" src="/img/wasa.png" alt=""><br>
+            <img id="btnmail" src="/img/mail.png" alt=""><br>
+            <img id="btntelef" src="/img/telef.png" alt="">
+            <b><a>Whatsapp</a><br></b>
+            <a>09 3456 7890</a><br> <br>
+            <b><a>Email</a></b><br> 
+            <a>hola@tickets.com</a> <br> <br>
+            <b><a>Call Center</a></b><br> 
+            <a>+59322 3456 7891</a><br> <br>
+          </div>
+          <div id="destin">
+            <p>Destinos</p>
+            <a href="">Playa</a><br> <br>
+            <a href="">Montaña</a><br> <br>
+            <a href="">Inolvidables eventos</a>
+          </div>
+          <div id="soport">
+            <p>Soporte</p>
+            <a href="">Preguntas frecuentes</a><br> <br>
+            <a href="">Política de privacidad</a><br> <br>
+            <a href="">Términos y condiciones</a><br> <br>
+            <a href="">Inolvidables eventos</a> <br>
+          </div>
+          <div id="follow">
+           <b> <p>Síguenos</p></b>
+           <a href=""><img id="ig" src="/img/insta.png" alt=""></a>
+           <a href=""><img id="fb" src="/img/fb.png" alt=""></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+</body>
+</form>
+

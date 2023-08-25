@@ -1,0 +1,67 @@
+<link rel="stylesheet" href="/src/public/css/editar/listar.css">
+{{#each lista}}
+<form action="/empleado/editar/{{id_empleado}}" method="post">
+
+  <head>
+
+    <head>
+      <div id="contendodrhe">
+        <div>
+          <div class="navbar">
+            <div id="imagen">
+              <img src="/img/logon.png"></img>
+            </div>
+            <a id="inicio" href="/views/inicio.hbs">Inicio</a>
+            <a id="administrador" href="#">Administrador</a>
+            <img id="img2" src="/img/perfil.png" alt="">
+          </div>
+        </div>
+    </head>
+    <h1>Registro de Cooperativas</h1>
+    <div id="contenedor">
+
+      <div class="row">
+        
+        <div id="tarjeta">
+          <u>
+            <h2>Datos De la Cooperativa</h2>
+          </u>
+
+          <div>
+            <input type="text" name="nombres_cooperativa" value="{{nombres_cooperativa}}" required
+              placeholder="Ingrese el titulo del video ">
+          </div>
+          <div>
+            <input type="text" name="numero_identificacion_cooperativa" value="{{numero_identificacion_cooperativa}}" required
+              placeholder="Ingrese el titulo del video ">
+          </div>
+          <div>
+            <input type="text" name="numero_transporte_cooperativa" value="{{numero_transporte_cooperativa}}" required
+              placeholder="Ingrese el titulo del video ">
+
+          </div>
+           <div>
+            <select id="horarioSele" name="horario_cooperativa" value="{{horario_cooperativa}}" required>
+              <option value="horario1">7:00 am a 13:00pm</option>
+              <option value="horario2">15:00pm a 18:00pm</option>
+              <option value="horario3">19:00pm a 23:00pm</option> <br>
+            </select>
+          </div>
+
+          <div>
+            <input type="text" name="contactos_cooperativa" value="{{contactos_cooperativa}}" required
+              placeholder="Ingrese el titulo del video ">
+
+          </div>
+          <div>
+            <input type="text" name="email_cooperativa" value="{{email_cooperativa}}" required
+              placeholder="Ingrese el titulo del video ">
+          </div>
+         
+          
+          <div id="boton">
+            <button type="submit">Actualizar</button>
+          </div>
+</form>
+{{/each}}
+</div>

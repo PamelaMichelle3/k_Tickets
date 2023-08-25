@@ -1,75 +1,82 @@
-<link rel="stylesheet" href="/src/public/css/Encomienda/agregar.css">
+<link rel="stylesheet" href="/css/encomienda/agregar.css">
+<form action="/encomienda"method="post">
+<body>
 <head>
-    <head>
-    <div id="contendodrhe">
+      <div id="contendodrhe">
         <div>
             <div class="navbar">
                 <div id="imagen">
                     <img src="/img/logon.png"></img></div>
-                    <a id="inicio" href="/views/inicio.hbs">Inicio</a>
+                 <a href="/inicio2">Inicio</a>
                     <a id="administrador" href="#">Administrador</a>
                     <img id="img2" src="/img/perfil.png" alt="">
             </div>
     </div>
 </head>
-  <body>
-      <div class="container">
-          <h1>Registro de Encomiendas</h1>
-          
-          <form id="encomienda-form" action="/" method="post">
-              <div class="input-group">
-                  <u><h2>Remitente</h2></u>
-                  <label for="nombres_remitente">Nombres Completos:</label>
-                  <input type="text" id="nombres_remitente" name="nombres_remitente" required>
-  
-                  <label for="cedula_remitente">Numero de cedula:</label>
-                  <input type="number" id="cedula_remitente" name="cedula_remitente" required>
-  
-                  <label for="telefono_remitente">Numero telefonico:</label>
-                  <input type="number" id="telefono_remitente" name="telefono_remitente" required>
-  
-                  <label for="correo_remitente">Correo Electronico:</label>
-                  <input type="text" id="correo_remitente" name="correo_remitente" required>
-              </div>
-  
-              <div class="input-group">
-                  <u><h2>Destinatario</h2></u>
-                  <label for="nombres_destinatario">Nombres Completos:</label>
-                  <input type="text" id="nombres_destinatario" name="nombres_destinatario" required>
-  
-                  <label for="cedula_destinatario">Numero de cedula:</label>
-                  <input type="number" id="cedula_destinatario" name="cedula_destinatario" required>
-  
-                  <label for="telefono_destinatario">Numero telefonico:</label>
-                  <input type="number" id="telefono_destinatario" name="telefono_destinatario" required>
-  
-                  <label for="callep_destinatario">Calle Principal:</label>
-                  <input type="text" id="callep_destinatario" name="callep_destinatario" required>
+  <div id="container">
+    <h2>Registro de Encomiendas</h2>
+    <u><h3>Remitente</h3></u>
+    
+    <form action="#" method="post">
+      <label id="name" for="nombre">Nombres Completos:</label> <br>
+      <input type="text" id="nombre" name="nombre" required>
 
-                  <label for="calles_destinatario">Calle Secundaria:</label>
-                  <input type="text"  id="calles_destinatario" name="calles_destinatario" required>
+      <label id="numeroce1" for="apellido"> Cedula:</label>
+      <input type="text" id="cedula1" name="cedula" required>
 
-                  <label for="numerocasa_destinatario">Numero de Casa:</label>
-                  <input type="number" id="numerocasa_destinatario" name="numerocasa_destinatario" required>
-              </div>
-  
-              <div class="input-group">
-                  <u><h2>Datos de envio</h2></u>
-                  <label for="tamaño_encomienda">Tamaño de encomienda:</label>
-                  <input type="number" id="tamaño_encomienda" name="tamaño_encomienda" required>
-  
-                  <label for="fecha_envio">Fecha y Hora de envio:</label>
-                  <input type="datetime-local" id="fecha_envio" name="fecha_envio" required>
-  
-                  <label for="registro_transporte">Numero de registro de transporte:</label>
-                  <input type="number" id="registro_transporte" name="registro_transporte" required>
-              </div>
-  
-              <button type="submit">Registrar</button>
-              <button type="submit" style="background-color: red;">Cancelar</button>
-          </form>
-      </div>
-  </body>
+      <label id="numetelef" for="apellido"> Telefono:</label>
+      <input type="text" id="telefono" name="telefono" required>
+
+        <br> <br>
+      <label id="correoele" for="cedula">Correo Electronico:</label> <br>
+      <input type="text" id="correo" name="correo" required>
+       <br> <br>
+    </form> <br>
+
+    <u><h3>Destinatario</h3></u>
+
+
+      <label id="name" for="nombre">Nombres Completos:</label> <br>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label id="numeroce2" for="apellido">Cedula:</label>
+      <input type="text" id="cedula2" name="cedula" required>
+
+      <label id="numetelef" for="apellido"> Telefono:</label>
+      <input type="text" id="telefono" name="telefono" required> <br>
+
+      <label id="calle" for="callepri">Calle Principal:</label> <br> <br>
+      <input type="text" id="callepri" name="callepri" required>
+
+      <label id="calles" for="calles">Calle Secundaria:</label>
+      <input type="text" id="callese" name="callese" required>
+
+      <label id="casa" for="numcasa">Numero de Casa:</label> 
+      <input type="text" id="numcasa" name="numcasa" required>
+        <br> <br>
+
+      <u><h3>Datos de envio</h3></u>
+
+      <label id="nameco" for="nomcoop">Nombre Cooperativa:</label> <br>
+      <input type="text" id="nomcoop" name="nomcoop" required>
+
+      <label id="telfC" for="telefonocelu">Tamaño de encomienda:</label>
+      <input type="text" id="telefonoC" name="telefonocelu" required>
+
+      <label id="date" for="fecha">Fecha y hora de envio:</label> 
+      <input type="datetime-local" id="fecha" name="fecha" required> <br>
+
+      <label id="numreg" for="registro">Numero de registro de transporte:</label>
+      <input type="text" id="registro" name="registro" required>
+
+      <label id="peso" for="pesoe">Peso:</label>
+      <input type="text" id="pesoe" name="pesoe" required>
+        <br>
+        <br>
+      <input id="cancel" type="submit" value="Cancelar">
+      <input id="save" type="submit" value="Registrar">
+  </div>
+<!--Footer -->
 <footer id="footer" class="">
       <div class="container">
         <div class="row text-left">
@@ -106,3 +113,5 @@
         </div>
       </div>
     </footer>
+</body>
+</from>

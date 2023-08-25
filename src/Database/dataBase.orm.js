@@ -28,13 +28,13 @@ sequelize.sync({ force: false })
 	const ciudadModel = require('../models/ciudad');
 	const cooperativaModel = require('../models/cooperativa');
 	const detalleCooperativaModel = require('../models/detalle_cooperativa');
-	const detalleEncomiendaModel = require('../models/detalle_encomienda');
+	//const detalleEncomiendaModel = require('../models/detalle_encomienda');
 	const detalleTransporteModel = require('../models/detalle_transporte');
 	const empleadoModel = require('../models/empleado');
 	const encargadoModel = require('../models/encargado');
-	const encomiendaDestinatarioModel = require('../models/encomienda_destinatario');
+	//const encomiendaDestinatarioModel = require('../models/encomienda_destinatario');
 	const encomiendaRemitenteModel = require('../models/encomienda_remitente');
-	const licenciaModel = require('../models/licencia');
+	//const licenciaModel = require('../models/licencia');
 	const rutaModel = require('../models/ruta');
 	const terminalModel = require('../models/terminal');
 
@@ -46,13 +46,13 @@ const chofer =  choferModel(sequelize, Sequelize)
 const ciudad =  ciudadModel(sequelize, Sequelize)
 const cooperativa =  cooperativaModel(sequelize, Sequelize)
 const detalle_cooperativa =  detalleCooperativaModel(sequelize, Sequelize)
-const detalle_encomienda =  detalleEncomiendaModel(sequelize, Sequelize)
+//const detalle_encomienda =  detalleEncomiendaModel(sequelize, Sequelize)
 const detalle_transporte =  detalleTransporteModel(sequelize, Sequelize)
 const empleado =  empleadoModel(sequelize, Sequelize)
 const encargado =  encargadoModel(sequelize, Sequelize)
-const encomienda_destinatario =  encomiendaDestinatarioModel(sequelize, Sequelize)
+//const encomienda_destinatario =  encomiendaDestinatarioModel(sequelize, Sequelize)
 const encomienda_remitente =  encomiendaRemitenteModel(sequelize, Sequelize)
-const licencia =  licenciaModel(sequelize, Sequelize)
+//const licencia =  licenciaModel(sequelize, Sequelize)
 const ruta =  rutaModel(sequelize, Sequelize)
 const terminal =  terminalModel(sequelize, Sequelize)
 
@@ -78,14 +78,14 @@ ruta.belongsTo(cooperativa)
 cooperativa.hasMany(terminal)
 terminal.belongsTo(cooperativa)
 
-encomienda_remitente.hasMany(detalle_encomienda)
-detalle_encomienda.belongsTo(encomienda_remitente)
+//encomienda_remitente.hasMany(detalle_encomienda)
+//detalle_encomienda.belongsTo(encomienda_remitente)
 
-encomienda_remitente.hasMany(encomienda_destinatario)
-encomienda_destinatario.belongsTo(encomienda_remitente)
+//encomienda_remitente.hasMany(encomienda_destinatario)
+//encomienda_destinatario.belongsTo(encomienda_remitente)
 
-licencia.hasMany(chofer)
-chofer.belongsTo(licencia)
+//licencia.hasMany(chofer)
+//chofer.belongsTo(licencia)
 
 ciudad.hasMany(empleado)
 empleado.belongsTo(ciudad)
@@ -109,12 +109,12 @@ module.exports = {
 	cooperativa,
 	detalle_transporte,
 	detalle_cooperativa,
-	detalle_encomienda,
+	//detalle_encomienda,
 	empleado,
 	encargado,
 	encomienda_remitente,
-	encomienda_destinatario,
+	//encomienda_destinatario,
 	ruta,
 	terminal,
-	licencia
+	//licencia
 };

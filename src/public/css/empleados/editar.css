@@ -1,0 +1,368 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  #img2{
+    position: relative;
+    width: 67px;
+    height: 63px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    right: 60px;
+  }
+#contenedorhe{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  #contenedor{
+    position: relative;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .navbar {
+      background-color: #1D202B;
+      overflow: hidden;
+    }
+  
+    .navbar a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+  
+    .navbar a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+  #imagen{
+    width: 100%;
+    height: 100%;
+    max-width: 50%;
+    max-height: 100%;
+  }
+  #imagen img{
+    width: 20%;
+    height: 40%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  #boton{
+    width: 160px;
+    height: 48px;
+    background-color: #F28705;
+    border: none;
+    color: white;
+    padding: 5px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    border-radius: 30px;
+    right: 100px;
+    position: absolute;
+  }
+  #inicio{
+    position: absolute;
+    left: 650px;
+  }
+  
+#container{
+    max-width: 2000px;
+    margin: 50px 110px;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+    background-image: url(/img/empleadosBack.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment:scroll;
+}
+#container h2{
+    position: relative;
+    text-align: center;
+}
+#name{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#nombre{
+    width: 250px;
+    height: 30px;
+    border-radius: 5px 2px;
+    padding: 0px, 31px, 0px, 7px;
+    gap: 10px;
+}
+#apelli{
+    position: relative;
+    left: 70px;
+    top: -35px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#apellido{
+    width: 250px;
+    height: 30px;
+    border-radius: 5px 2px;
+    padding: 0px, 31px, 0px, 7px;
+    gap: 10px;
+}
+#date{
+    position: relative;
+    left: 80px;
+    top: -35px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#fecha_nacimiento{
+    position: relative;
+    right: 80px;
+    width: 225px;
+    height: 30px;
+    border-radius: 5px 2px;
+}
+#numce{
+    position: relative;
+    left: 0px;
+    top: -6px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#cedula{
+    position: relative;
+    right: 0px;
+    width: 250px;
+    height: 30px;
+    border-radius: 5px 2px;
+}
+#sexo{
+    position: relative;
+    left: 68px;
+    top: -45px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#sexoSele{
+    position: relative;
+    right: -20px;
+    width: 250px;
+    height: 30px;
+    border-radius: 5px 2px;
+}
+
+#sect{
+    position: relative;
+    left: 0px;
+    top: -25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#sector{
+    top: 9px;
+    position: relative;
+    right: 50px;
+    width: 310px;
+    height: 30px;
+    border-radius: 5px 2px;
+}
+#calleSe{
+    position: relative;
+    left: 0px;
+    top: -6px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#callesecu{
+    position: relative;
+    right: 0px;
+    width: 310px;
+    height: 30px;
+    border-radius: 5px 2px;
+}
+#calleP{
+    position: relative;
+    left: 70px;
+    top: -40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#callepri{
+    position: relative;
+    right: 35px;
+    width: 310px;
+    height: 30px;
+    border-radius: 5px 2px;
+}
+
+#telfC{
+    position: relative;
+    left: 0px;
+    top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#telefonoC{
+    top: 9px;
+    position: relative;
+    right: 0px;
+    width: 310px;
+    height: 30px;
+    border-radius: 5px 2px;
+}
+#teleCo{
+    position: relative;
+    left: 70px;
+    top: -25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#telefonoCo{
+    top: 9px;
+    position: relative;
+    right: 95px;
+    width: 310px;
+    height: 30px;
+    border-radius: 5px 2px;
+}
+#email{
+    position: relative;
+    left: -25px;
+    top: -25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#Email{
+    top: 9px;
+    position: relative;
+    right: 88px;
+    width: 265px;
+    height: 30px;
+    border-radius: 5px 2px;
+}
+#area{
+    position: relative;
+    left: 1px;
+    top: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#AreaTra{
+    position: relative;
+    right: 0px;
+    width: 310px;
+    height: 30px;
+    border-radius: 5px 2px;
+}
+#cancel{
+    position: relative;
+    left: 1000px;
+    width: 100px;
+    height: 50px;
+    border-radius: 20px;
+    background-color: #FF0D0D;
+    color: white;
+}
+#save{
+    position: relative;
+    left: 780px;
+    width: 100px;
+    height: 50px;
+    border-radius: 20px;
+    background-color: #0084FF;
+    color: white;
+}
+
+.container{
+    max-width:840px;
+    margin: 0 auto 8px auto;
+  }
+  #footer{
+    background-color: #1D202A;
+    position: relative;
+    top: 100px;
+    padding: 100px; 
+  }
+  #footer p{
+    position: absolute;
+    color: white;
+    top: 35px;
+  }
+  #contact{
+    position: absolute;
+  }
+  #contact p{
+    position: absolute;
+    top: -65px;
+  }
+  #contact a{
+    position: relative;
+    color: white;
+    left: 80px;
+    top: -50px;
+  }
+  #btnwasa{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    top: 0px;
+  }
+  #btnmail{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    top: 75px;
+  }
+  #btntelef{
+    position: absolute;
+    height: 40px;
+    width: 40px; 
+    top: 145px;
+  }
+  #inf a{
+    position: absolute;
+    left: 350px;
+    color: rgb(124, 124, 124);
+  }
+  #destin a{
+    position: absolute;
+    left: 600px;
+    color: rgb(124, 124, 124);
+  }
+  #destin p{
+    position: absolute;
+    left: 600px;
+    color: white;
+  }
+  .soport p{
+    left: 800px;
+  }
+  #soport a{
+    position: absolute;
+    left: 800px;
+    color: rgb(124, 124, 124);
+  }
+  #soport p{
+    position: absolute;
+    left: 800px;
+    color: white;
+  }
+  #follow{
+    position: absolute;
+    top: 0px;
+    left: 1030px;
+  }
+  #fb{
+    position: absolute;
+    height: 40px;
+    width: 40px; 
+    top: 80px;
+  }
+  #ig{
+    position: absolute;
+    height: 40px;
+    width: 40px; 
+    top: 80px;
+    left: 50px;
+  }

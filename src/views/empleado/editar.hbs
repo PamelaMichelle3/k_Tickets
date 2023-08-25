@@ -1,124 +1,90 @@
-<link rel="stylesheet" href="/css/empleados/empleados.css">
-<from action="/"method="post">
-<body>
-<head>
+<link rel="stylesheet" href="/src/public/css/Encomienda/listar.css">
+{{#each lista}}
+<form action="/empleado/editar/{{id_empleado}}" method="post">
+
+  <head>
+
     <head>
-    <div id="contendodrhe">
+      <div id="contendodrhe">
         <div>
-            <div class="navbar">
-                <div id="imagen">
-                    <img src="/img/logon.png"></img></div>
-                    <a id="inicio" href="/views/inicio.hbs">Inicio</a>
-                    <a id="administrador" href="#">Administrador</a>
-                    <img id="img2" src="/img/perfil.png" alt="">
+          <div class="navbar">
+            <div id="imagen">
+              <img src="/img/logon.png"></img>
             </div>
-    </div>
-</head>
-  <div id="container">
-    <h2>Registro de empleados</h2>
-    <u><h3>Datos personales</h3></u>
-    
-    <form action="#" method="post">
-        <div>
-                    <label>Id: </label>
-                    <input type="text" name="id_empleado" value="{{id_empleado}}" readonly  >
-                  </div>
-      <label id="name" for="nombre">Nombre</label> <br>
-     <input type="text" name="nombres_empleado" value="{{nombres_empleado}}" readonly  >
-      <label id="apelli" for="apellido">Apellido:</label>
-      <input type="text" id="apellido_empleado" name="apellido_empleado" value="{{apellido_empleado}}" required>
-
-      <label id="nunce" for="Cedula">Cedula:</label> 
-      <input type="text" id="cedula_empleado" name="cedula_empleado" value="{{cedula_empleado}}" required>
-        <br> <br>
-      <label id="date" for="cedula"> fecha_nacimiento:</label> <br>
-     <input type="text" id="fecha_nacimiento_empleado" name="fecha_nacimiento_empleado" value="{{fecha_nacimiento_empleado}}" required>
-
-      <label id="sexo" for="sexo">Sexo:</label>
-      <select id="sexoSele" name="sexo" required>
-        <option value="masculino">Masculino</option>
-        <option value="femenino">Femenino</option>
-        <option value="otro">Otro</option> <br>
-
-      </select> <br> <br>
-    </form> <br>
-
-    <u><h3>Lugar de residencia</h3></u>
-
-    
-
-      <label id="pronvin" for="apellido">Provincia</label>
-     <input type="text" id="nombres_remitente" name="nombres_remitente" value="{{provincia_empleado}}" required>
-
-     
-        <br> <br>
-        
-      <label id="calleP" for="nombre">Calle principal</label> <br>
-      <input type="text" id="calle_principal_empleado" name="calle_principal_empleado" value="{{calle_principal_empleado}}" required>
-       
-       <label id="calleSe" for="nombre">Calle secundaria</label> 
-      <input type="text" id="calle_secundaria" name="calle_secundaria" value="{{calle_secundaria_empleado}}" required>
-       
-        <br> <br>
-
-      <u><h3>Contactos</h3></u>
-
-      <label id="telfC" for="telefonocelu">Celular</label> <br>
-       <input type="number" id="celular_empleado" name="celular_empleado" value="{{celular_empleado}}" required>
-
-      <label id="teleCo" for="telefonoconv">Telefono Convencional</label>
-       <input type="number" id="telefono_empleado" name="telefono_empleado" value="{{telefono_empleado}}" required>
-
-      <label id="email" for="emailCorreo">Email@</label> 
-       <input type="text" id="email_empleado" name="email_empleado" value="{{email_empleado}}" required>
-
-      <label id="area" for="Area">Area:</label> <br> <br>
-      <select id="AreaTra" name="area" required>
-        <option value="chofer">Chofer</option>
-        <option value="bodegero">Bodegero</option>
-        <option value="buses">Buses</option>
-      </select>
-        <br>
-        <br>
-      <input id="cancel" type="submit" value="Cancelar">
-      <input id="save" type="submit" value="Registrar">
-  </div>
-
-<footer id="footer" class="">
-      <div class="container">
-        <div class="row text-left">
-          <div id="contact">
-            <p>Contactanos</p>
-            <img id="btnwasa" src="/img/wasa.png" alt=""><br>
-            <img id="btnmail" src="/img/mail.png" alt=""><br>
-            <img id="btntelef" src="/img/telef.png" alt="">
-            <b><a>Whatsapp</a><br></b>
-            <a>09 3456 7890</a><br> <br>
-            <b><a>Email</a></b><br> 
-            <a>hola@tickets.com</a> <br> <br>
-            <b><a>Call Center</a></b><br> 
-            <a>+59322 3456 7891</a><br> <br>
-          </div>
-          <div id="destin">
-            <p>Destinos</p>
-            <a href="">Playa</a><br> <br>
-            <a href="">Montaña</a><br> <br>
-            <a href="">Inolvidables eventos</a>
-          </div>
-          <div id="soport">
-            <p>Soporte</p>
-            <a href="">Preguntas frecuentes</a><br> <br>
-            <a href="">Política de privacidad</a><br> <br>
-            <a href="">Términos y condiciones</a><br> <br>
-            <a href="">Inolvidables eventos</a> <br>
-          </div>
-          <div id="follow">
-           <b> <p>Síguenos</p></b>
-           <a href=""><img id="ig" src="/img/insta.png" alt=""></a>
-           <a href=""><img id="fb" src="/img/fb.png" alt=""></a>
+            <a id="inicio" href="/views/inicio.hbs">Inicio</a>
+            <a id="administrador" href="#">Administrador</a>
+            <img id="img2" src="/img/perfil.png" alt="">
           </div>
         </div>
-      </div>
-    </footer>
-</body>
-</from>
+    </head>
+    <h1>Registro de Empleados</h1>
+    <div id="contenedor">
+
+      <div class="row">
+        
+        <div id="tarjeta">
+          <u>
+            <h2>Datos Personales</h2>
+          </u>
+
+          <div>
+            <input type="text" name="nombres_empleado" value="{{nombres_empleado}}" required
+              placeholder="Ingrese el titulo del video ">
+          </div>
+          <div>
+            <input type="text" name="apellido_empleado" value="{{apellido_empleado}}" required
+              placeholder="Ingrese el titulo del video ">
+          </div>
+          <div>
+            <input type="text" name="cedula_empleado" value="{{cedula_empleado}}" required
+              placeholder="Ingrese el titulo del video ">
+
+          </div>
+          <div>
+            <input type="date" name="fecha_nacimiento_empleado" value="{{fecha_nacimiento_empleado}}" required
+              placeholder="Ingrese el titulo del video ">
+
+          </div>
+
+          <div>
+            <select id="sexoSele" name="sexo_empleado" value="{{sexo_empleado}}" required>
+              <option value="masculino">Masculino</option>
+              <option value="femenino">Femenino</option>
+              <option value="otro">Otro</option> <br>
+            </select>
+          </div>
+
+          <div>
+            <input type="text" name="calle_principal_empleado" value="{{calle_principal_empleado}}" required
+              placeholder="Ingrese el titulo del video ">
+
+          </div>
+          <div>
+            <input type="text" name="calle_secundaria" value="{{calle_secundaria}}" required
+              placeholder="Ingrese el titulo del video ">
+          </div>
+          <div>
+            <input type="text" name="celular_empleado" value="{{celular_empleado}}" required
+              placeholder="Ingrese el titulo del video ">
+          </div>
+          <div>
+            <input type="text" name="telefono_empleado" value="{{telefono_empleado}}" required
+              placeholder="Ingrese el titulo del video ">
+          </div>
+          <div>
+            <input type="text" name="email_empleado" value="{{email_empleado}}" required
+              placeholder="Ingrese el titulo del video ">
+          </div>
+          <div>
+            <select id="AreaTra" name="area_empleado" value="{{area_empleado}}" required>
+              <option value="chofer">Chofer</option>
+              <option value="bodegero">Bodegero</option>
+              <option value="buses">Buses</option>
+            </select>
+          </div>
+          <div id="boton">
+            <button type="submit">Actualizar</button>
+          </div>
+</form>
+{{/each}}
+</div>

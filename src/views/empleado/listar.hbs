@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="/src/public/css/Encomienda/listar.css">
-<form action="empleado/lista/1" method="get"></form>
+<form action="empleado/listar/" method="get"></form>
 <head>
    <head>
     <div id="contendodrhe">
@@ -21,9 +21,6 @@
         <div id="tarjeta">
             <u><h2>Datos Personales</h2></u>
             <div>
-                <p>{{id_encomienda_remitente}}</p>
-            </div>
-            <div>
                 <p>{{nombres_empleado}}</p>
             </div>
             <div>
@@ -36,13 +33,13 @@
                 <p>{{fecha_nacimiento_empleado}}</p>
             </div>
             <div>
-                <p>{{provincia_empleado}}</p>
+                <p>{{sexo_empleado}}</p>
             </div>
             <div>
                 <p>{{calle_principal_empleado}}</p>
             </div>
             <div>
-                <p>{{calle_secundaria_empleado}}</p>
+                <p>{{calle_secundaria}}</p>
             </div>
             <div>
                 <p>{{celular_empleado}}</p>
@@ -54,66 +51,14 @@
                 <p>{{email_empleado}}</p>
             </div>
             <div>
+                <p>{{area_empleado}}</p>
+            </div>
+            <div>
                 <div>
                     <a href="/empleado/editar/{{id_empleado}}"><button type="button">Editar</button></a>
                 </div></p>
                 <div>
                     <a href="/empleado/eliminar/{{id_empleado}}"><button type="button" style="background-color: red;">Eliminar</button></a>
-                </div></p>
-            </div>
-        </div>
-
-        <div id="tarjeta">
-            <u><h2>Destinatario</h2></u>
-            <div>
-                <p>{{id_encomienda_remitente}}</p>
-            </div>
-            <div>
-                <p>{{nombres_encomienda_remitente}}</p>
-            </div>
-            <div>
-                <p>{{cedula_encomienda_remitente}}</p>
-            </div>
-            <div>
-                <p>{{telefono_encomienda_remitente}}</p>
-            </div>
-            <div>
-                <p>{{email_encomienda_remitente}}</p>
-            </div>
-            <div>
-                <div>
-                    <a href="/encomienda_remitente/editar/{{id_encomienda_remitente}}"><button type="button">Editar</button></a>
-                </div></p>
-                <div>
-                    <a href="/encomienda_remitente/eliminar/{{id_encomienda_remitente}}"><button type="button" style="background-color: red;">Eliminar</button></a>
-                </div></p>
-            </div>
-        </div>
-
-
-        <div id="tarjeta">
-            <u><h2>Datos de envio</h2></u>
-            <div>
-                <p>{{id_encomienda_remitente}}</p>
-            </div>
-            <div>
-                <p>{{nombres_encomienda_remitente}}</p>
-            </div>
-            <div>
-                <p>{{cedula_encomienda_remitente}}</p>
-            </div>
-            <div>
-                <p>{{telefono_encomienda_remitente}}</p>
-            </div>
-            <div>
-                <p>{{email_encomienda_remitente}}</p>
-            </div>
-            <div>
-                <div>
-                    <a href="/encomienda_remitente/editar/{{id_encomienda_remitente}}"><button type="button">Editar</button></a>
-                </div></p>
-                <div>
-                    <a href="/encomienda_remitente/eliminar/{{id_encomienda_remitente}}"><button type="button" style="background-color: red;">Eliminar</button></a>
                 </div></p>
             </div>
         </div>
@@ -124,22 +69,36 @@
 <footer id="footer" class="">
       <div class="container">
         <div class="row text-left">
-          <div class="contact">
+          <div id="contact">
             <p>Contactanos</p>
             <img id="btnwasa" src="/img/wasa.png" alt=""><br>
             <img id="btnmail" src="/img/mail.png" alt=""><br>
             <img id="btntelef" src="/img/telef.png" alt="">
+            <b><a>Whatsapp</a><br></b>
+            <a>09 3456 7890</a><br> <br>
+            <b><a>Email</a></b><br> 
+            <a>hola@tickets.com</a> <br> <br>
+            <b><a>Call Center</a></b><br> 
+            <a>+59322 3456 7891</a><br> <br>
           </div>
           <div id="destin">
-            <p>Destinos</p><br>
-            <a>Playa</a><br>
-            <a>Montaña</a><br>
-            <a>Inolvidables eventos</a>
+            <p>Destinos</p>
+            <a href="">Playa</a><br> <br>
+            <a href="">Montaña</a><br> <br>
+            <a href="">Inolvidables eventos</a>
           </div>
-          <div class="soport">
+          <div id="soport">
             <p>Soporte</p>
-            
+            <a href="">Preguntas frecuentes</a><br> <br>
+            <a href="">Política de privacidad</a><br> <br>
+            <a href="">Términos y condiciones</a><br> <br>
+            <a href="">Inolvidables eventos</a> <br>
+          </div>
+          <div id="follow">
+           <b> <p>Síguenos</p></b>
+           <a href=""><img id="ig" src="/img/insta.png" alt=""></a>
+           <a href=""><img id="fb" src="/img/fb.png" alt=""></a>
           </div>
         </div>
       </div>
-</footer>
+    </footer>

@@ -1,0 +1,89 @@
+<link rel="stylesheet" href="/src/public/css/cooperativa/listar.css">
+<form action="empleado/listar/" method="get"></form>
+<head>
+   <head>
+    <div id="contendodrhe">
+        <div>
+            <div class="navbar">
+                <div id="imagen">
+                    <img src="/img/logon.png"></img></div>
+                    <a id="inicio" href="/views/inicio.hbs">Inicio</a>
+                    <a id="administrador" href="#">Administrador</a>
+                    <img id="img2" src="/img/perfil.png" alt="">
+            </div>
+    </div>
+</head>
+<h1>Registro de las Cooperativas</h1>
+<div id="contenedor">
+    
+    <div class="row">
+        {{#each lista}}
+        <div id="tarjeta">
+            <u><h2>Datos de la Cooperativas</h2></u>
+            <div>
+                <p>{{nombres_cooperativa}}</p>
+            </div>
+            <div>
+                <p>{{numero_identificacion_cooperativa}}</p>
+            </div>
+            <div>
+                <p>{{numero_transporte_cooperativa}}</p>
+            </div>
+            <div>
+                <p>{{horario_cooperativa}}</p>
+            </div>
+            <div>
+                <p>{{contactos_cooperativa}}</p>
+            </div>
+            <div>
+                <p>{{email_cooperativa}}</p>
+            </div>
+            <div>
+                <div>
+                    <a href="/cooperativa/editar/{{id_cooperativa}}"><button type="button">Editar</button></a>
+                </div></p>
+                <div>
+                    <a href="/cooperativa/eliminar/{{id_cooperativa}}"><button type="button" style="background-color: red;">Eliminar</button></a>
+                </div></p>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>
+
+<footer id="footer" class="">
+      <div class="container">
+        <div class="row text-left">
+          <div id="contact">
+            <p>Contactanos</p>
+            <img id="btnwasa" src="/img/wasa.png" alt=""><br>
+            <img id="btnmail" src="/img/mail.png" alt=""><br>
+            <img id="btntelef" src="/img/telef.png" alt="">
+            <b><a>Whatsapp</a><br></b>
+            <a>09 3456 7890</a><br> <br>
+            <b><a>Email</a></b><br> 
+            <a>hola@tickets.com</a> <br> <br>
+            <b><a>Call Center</a></b><br> 
+            <a>+59322 3456 7891</a><br> <br>
+          </div>
+          <div id="destin">
+            <p>Destinos</p>
+            <a href="">Playa</a><br> <br>
+            <a href="">Montaña</a><br> <br>
+            <a href="">Inolvidables eventos</a>
+          </div>
+          <div id="soport">
+            <p>Soporte</p>
+            <a href="">Preguntas frecuentes</a><br> <br>
+            <a href="">Política de privacidad</a><br> <br>
+            <a href="">Términos y condiciones</a><br> <br>
+            <a href="">Inolvidables eventos</a> <br>
+          </div>
+          <div id="follow">
+           <b> <p>Síguenos</p></b>
+           <a href=""><img id="ig" src="/img/insta.png" alt=""></a>
+           <a href=""><img id="fb" src="/img/fb.png" alt=""></a>
+          </div>
+        </div>
+      </div>
+    </footer>

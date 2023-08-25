@@ -14,6 +14,9 @@ const chofer=(sequelize,type)=>{
        direccion_chofer : type.STRING,
        email_chofer : type.STRING,
        celular_chofer : type.STRING,
+       tipo_licencia: type.STRING,
+        fecha_emision_licencia: type.STRING,
+        fecha_vencimiento_licencia: type.STRING,
 
 
         crearChofer:{

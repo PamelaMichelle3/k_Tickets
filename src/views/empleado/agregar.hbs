@@ -1,14 +1,14 @@
 <link rel="stylesheet" href="/css/empleados/empleados.css">
-<from action="/"method="post">
+<form action="/empleado/agregar"method="POST">
 <body>
 <head>
-  <head>
+ 
     <div id="contendodrhe">
         <div>
             <div class="navbar">
                 <div id="imagen">
                     <img src="/img/logon.png"></img></div>
-                    <a id="inicio" href="/views/inicio.hbs">Inicio</a>
+                    <a href="/inicio2">Inicio</a>
                     <a id="administrador" href="#">Administrador</a>
                     <img id="img2" src="/img/perfil.png" alt="">
             </div>
@@ -18,69 +18,56 @@
     <h2>Registro de Empleados</h2>
     <u><h3>Datos personales</h3></u>
     
-    <form action="#" method="post">
       <label id="name" for="nombre">Nombre</label> <br>
-      <input type="text" id="nombre" name="nombre" required>
+      <input type="text" id="nombre" name="nombres_empleado" required>
 
       <label id="apelli" for="apellido">Apellido:</label>
-      <input type="text" id="apellido" name="apellido" required>
+      <input type="text" id="apellido" name="apellido_empleado" required>
 
       <label id="date" for="fecha_nacimiento">Fecha de Nacimiento:</label> 
-      <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+      <input type="date" id="fecha_nacimiento" name="fecha_nacimiento_empleado" required>
         <br> <br>
       <label id="numce" for="cedula">Número de Cédula:</label> <br>
-      <input type="text" id="cedula" name="cedula" required>
+      <input type="text" id="cedula" name="cedula_empleado" required>
 
       <label id="sexo" for="sexo">Sexo:</label>
-      <select id="sexoSele" name="sexo" required>
+      <select id="sexoSele" name="sexo_empleado" required>
         <option value="masculino">Masculino</option>
         <option value="femenino">Femenino</option>
         <option value="otro">Otro</option> <br>
 
       </select> <br> <br>
-    </form> <br>
-
     <u><h3>Lugar de residencia</h3></u>
 
-      <label id="canton" for="canton">Canton</label> <br>
-      <input type="text" id="cantonIn" name="canton" required>
-
-      <label id="pronvin" for="apellido">Provincia</label>
-      <input type="text" id="provincia" name="provincia" required>
-
-      <label id="sect" for="fecha_nacimiento">Sector</label> 
-      <input type="text" id="sector" name="sector" required>
-        <br> <br>
       <label id="calleSe" for="nombre">Calle secundaria</label> <br>
-      <input type="text" id="callesecu" name="calleS" required>
+      <input type="text" id="callesecu" name="calle_secundaria" required>
 
       <label id="calleP" for="nombre">Calle principal</label>
-      <input type="text" id="callepri" name="calleP" required>
+      <input type="text" id="callepri" name="calle_principal_empleado" required>
         <br> <br>
 
       <u><h3>Contactos</h3></u>
 
       <label id="telfC" for="telefonocelu">Telefono Celular</label> <br>
-      <input type="text" id="telefonoC" name="telefonocelu" required>
+      <input type="text" id="telefonoC" name="celular_empleado" required>
 
       <label id="teleCo" for="telefonoconv">Telefono Convencional</label>
-      <input type="text" id="telefonoCo" name="telefonoconv" required>
+      <input type="text" id="telefonoCo" name="telefono_empleado" required>
 
       <label id="email" for="emailCorreo">Email@</label> 
-      <input type="text" id="Email" name="Email" required>
+      <input type="text" id="Email" name="email_empleado" required>
 
       <label id="area" for="Area">Area:</label> <br> <br>
-      <select id="AreaTra" name="area" required>
+      <select id="AreaTra" name="area_empleado" required>
         <option value="chofer">Chofer</option>
         <option value="bodegero">Bodegero</option>
         <option value="buses">Buses</option>
       </select>
         <br>
         <br>
-      <input id="cancel" type="submit" value="Cancelar">
-      <input id="save" type="submit" value="Registrar">
-  </div>
-
+      <button type="submit">Guardar</button>
+      <button type="submit" style="background-color: red;">Cancelar</button>
+</div>
 <footer id="footer" class="">
       <div class="container">
         <div class="row text-left">
@@ -118,4 +105,4 @@
       </div>
     </footer>
 </body>
-</from>
+</form>

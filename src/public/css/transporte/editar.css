@@ -1,0 +1,338 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+#contenedorhe{
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+}
+#contenedor{
+  position: relative;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+h3 {
+  position: absolute;
+  top: 450px;
+  text-decoration: underline;
+}
+.navbar {
+    background-color: #1D202B;
+    overflow: hidden;
+  }
+
+  .navbar a {
+    float: left;
+    display: block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  .navbar a:hover {
+    color: rgb(161, 157, 157);
+  }
+#imagen{
+  width: 100%;
+  height: 100%;
+  max-width: 50%;
+  max-height: 100%;
+}
+#imagen img{
+  width: 20%;
+  height: 40%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.icono {
+  width: 4%; 
+  height: 10%;
+  position: absolute;
+  left: 1260px;
+  top: -4px;
+  padding: 9px 0;
+}
+#inicio{
+  position: absolute;
+  left: 1000px;
+}
+
+#administrador{
+  position: absolute;
+  left: 1100px;
+}
+
+#container{
+  max-width: 2000px;
+  margin: 50px 110px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgb(0, 0, 0);
+  color: #000000;
+}
+
+#container .fondo{
+  opacity: 0.5;
+  width: 1129px;
+  height: 470px;
+  position: absolute;
+  left: 110px;
+  top: 200px;
+
+}
+#container h2{
+  position: relative;
+  text-align: center;
+}
+#name{
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+  top: 240px;
+  left: 620px;
+}
+#nombre{
+  position: absolute;
+  right: 328px;
+  top: 270px;
+  width: 400px;
+  height: 30px;
+  border-radius: 5px;
+  padding: 0px, 31px, 0px, 7px;
+  border-color: #000000;
+  border-width: 2px;
+}
+#placa{
+  position: relative;
+  left: 0px;
+  top: 60px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#nroplaca{
+  position: absolute;
+  right: 910px;
+  top: 270px;
+  width: 310px;
+  height: 30px;
+  border-radius: 5px;
+  padding: 0px, 31px, 0px, 7px;
+  gap: 10px;
+  border-color: #000000;
+  border-width: 2px;
+}
+
+#capacidad{
+  position: relative;
+  left: 0px;
+  top: 125px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#capacidadmaxima{
+  position: relative;
+  right: 140px;
+  top: 160px;
+  width: 310px;
+  height: 30px;
+  border-radius: 5px;
+  border-color: #000000;
+  border-width: 2px;
+}
+#conductor{
+  position: relative;
+  left:390px;
+  top:-6px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#conductorencargado{
+  position: relative;
+  right:  -230px;
+  top: 28px;
+  width: 310px;
+  height: 30px;
+  border-radius: 5px;
+  border-color: #000000;
+  border-width: 2px;
+}
+
+#copiloto{
+  position: relative;
+  left: 790px;
+  top: -65px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#copilotoasignado{
+  position: relative;
+  right: -650px;
+  top: -30px;
+  width: 310px;
+  height: 30px;
+  border-radius: 3px;
+  border-color: #000000;
+  border-width: 2px;
+
+}
+#partida{
+  position: relative;
+  left: -435px;
+  top: 135px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#partidaa{
+  top: 140px;
+  position: relative;
+  right: 0px;
+  width: 310px;
+  height: 30px;
+  border-radius: 10px;
+  border-color: #000000;
+  border-width: 2px;
+}
+
+#destino{
+  position: relative;
+  left: 315px;
+  top: 100px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#destinoo {
+  top:105px;
+  position: relative;
+  right: -620px;
+  width: 310px;
+  height: 30px;
+  border-radius: 10px;
+  border-color: #000000;
+  border-width: 2px;
+}
+
+button {
+background-color: #4CAF50;
+color: white;
+border: none;
+padding: 10px 20px;
+border-radius: 5px;
+float: left;
+margin-right: 10px;
+cursor: pointer;
+margin-bottom: 10px;
+position: relative;
+left: 850px;
+top: -24px;
+}
+
+.registrarse button {
+background-color: #2579e6;
+}
+
+
+.cancelar button {
+background-color: #ec0d0d;
+}
+
+
+.container{
+  max-width:840px;
+  margin: 0 auto 8px auto;
+}
+#footer{
+  background-color: #1D202A;
+  position: relative;
+  top: 100px;
+  padding: 100px; 
+}
+#footer p{
+  position: absolute;
+  color: white;
+  top: 35px;
+}
+#contact{
+  position: absolute;
+}
+#contact p{
+  position: absolute;
+  top: -65px;
+}
+#contact a{
+  position: relative;
+  color: white;
+  left: 80px;
+  top: -50px;
+}
+#btnwasa{
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  top: 0px;
+}
+#btnmail{
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  top: 75px;
+}
+#btntelef{
+  position: absolute;
+  height: 40px;
+  width: 40px; 
+  top: 145px;
+}
+#inf a{
+  position: absolute;
+  left: 350px;
+  color: rgb(124, 124, 124);
+}
+#destin a{
+  position: absolute;
+  left: 600px;
+  color: rgb(124, 124, 124);
+}
+#destin p{
+  position: absolute;
+  left: 600px;
+  color: white;
+}
+.soport p{
+  left: 800px;
+}
+#soport a{
+  position: absolute;
+  left: 800px;
+  color: rgb(124, 124, 124);
+}
+#soport p{
+  position: absolute;
+  left: 800px;
+  color: white;
+}
+#follow{
+  position: absolute;
+  top: 0px;
+  left: 1030px;
+}
+#fb{
+  position: absolute;
+  height: 40px;
+  width: 40px; 
+  top: 80px;
+}
+#ig{
+  position: absolute;
+  height: 40px;
+  width: 40px; 
+  top: 80px;
+  left: 50px;
+}

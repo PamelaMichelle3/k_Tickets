@@ -1,144 +1,118 @@
-<link rel="stylesheet" href="/src/public/css/Encomienda/editar.css">
+<link rel="stylesheet" href="/css/encomienda/editar.css">
+<from action="/"method="post">
+<body>
 <head>
-    <head>
     <div id="contendodrhe">
         <div>
             <div class="navbar">
                 <div id="imagen">
                     <img src="/img/logon.png"></img></div>
-                    <a id="inicio" href="/views/inicio.hbs">Inicio</a>
-                    <a id="administrador" href="#">Administrador</a>
-                    <img id="img2" src="/img/perfil.png" alt="">
+                    <a id="inicio" href="#">Inicio</a>
+                    <button id="boton" type="button" href="#">Ingresar</button>
             </div>
     </div>
 </head>
-  <body>
-      <div class="container">
-          <h1>Registro de Encomiendas</h1>
-          
-          <form id="encomienda-form" action="/" method="post">
-              <div class="input-group">
-                  <u><h2>Remitente</h2></u>
+  <div id="container">
+    <h2>Registro de Encomiendas</h2>
+    <u><h3>Remitente</h3></u>
+    
+    <form action="#" method="post">
+      <label>Id: </label>
+      <input type="text" name="id_encomienda_remitente" value="{{id_encomienda_remitente}}" readonly  >
 
-                  <div>
-                    <label>Id: </label>
-                    <input type="text" name="id_encomienda_remitente" value="{{id_encomienda_remitente}}" readonly  >
-                  </div>
-                  <div>
-                  <label for="nombres_remitente">Nombres Completos:</label>
-                  <input type="text" id="nombres_remitente" name="nombres_remitente" value="{{nombres_encomienda_remitente}}" required>
-                </div>
-                <div>
-                  <label for="cedula_remitente">Numero de cedula:</label>
-                  <input type="number" id="cedula_remitente" name="cedula_remitente" value="{{cedula_encomienda_remitente}}" required>
-                </div>
-                <div>
-                  <label for="telefono_remitente">Numero telefonico:</label>
-                  <input type="number" id="telefono_remitente" name="telefono_remitente" value="{{telefono_encomienda_remitente}}" required>
-                </div>
-                <div>
-                  <label for="correo_remitente">Correo Electronico:</label>
-                  <input type="text" id="correo_remitente" name="correo_remitente" value="{{email_encomienda_remitente}}" required>
-                </div>
-              </div>
-  
-              <div class="input-group">
-                  <u><h2>Destinatario</h2></u>
+      <label id="name" for="nombre">Nombres Completos:</label> <br>
+      <input type="text" id="nombre" name="nombre" value="{{nombres_encomienda_remitente}}" required>
 
-                  <div>
-                    <label>Id: </label>
-                    <input type="text" name="id_encomienda_destinatario" value="{{id_encomienda_destinatario}}" readonly  >
-                  </div>
-                  <div>
-                  <label for="nombres_destinatario">Nombres Completos:</label>
-                  <input type="text" id="nombres_destinatario" name="nombres_destinatario" value="{{nombresCompletosEncomiendaDestinatario}}" required>
-                </div>
+      <label id="numeroce" for="apellido">Numero de Cedula:</label>
+      <input type="text" id="cedula" name="cedula" value="{{cedula_encomienda_remitente}}" required>
 
-                <div>
-                  <label for="cedula_destinatario">Numero de cedula:</label>
-                  <input type="number" id="cedula_destinatario" name="cedula_destinatario" value="{{cedulaEncomiendaDestinatario}}" required>
-                </div>
-                
-                <div>
-                  <label for="telefono_destinatario">Numero telefonico:</label>
-                  <input type="number" id="telefono_destinatario" name="telefono_destinatario" value="{{telefonoEncomiendaDestinatario}}" required>
-                </div>
-  
-                <div>
-                  <label for="callep_destinatario">Calle Principal:</label>
-                  <input type="text" id="callep_destinatario" name="callep_destinatario" value="{{callepEncomiendaDestinatario}}" required>
-                </div>
+      <label id="numetelef" for="apellido">Numero de Telefono:</label>
+      <input type="text" id="telefono" name="telefono" value="{{telefono_encomienda_remitente}}" required>
 
-                <div>
-                    <label for="calles_destinatario">Calle Secundaria:</label>
-                  <input type="text"  id="calles_destinatario" name="calles_destinatario" value="{{callesEncomiendaDestinatario}}" required>
-                  </div>
+        <br> <br>
+      <label id="correoele" for="cedula">Correo Electronico:</label> <br>
+      <input type="text" id="correo" name="correo" value="{{email_encomienda_remitente}}"  required>
+       <br> <br>
+    </form> <br>
 
-                <div>
-                    <label for="numerocasa_destinatario">Numero de Casa:</label>
-                  <input type="number" id="numerocasa_destinatario" name="numerocasa_destinatario" value="{{nroCasaEncomiendaDestinatario}}" required>
-                </div>  
-              </div>
+    <u><h3>Destinatario</h3></u>
 
-              <div class="input-group">
-                  <u><h2>Datos de envio</h2></u>
+      <label id="name" for="nombre">Nombres Completos:</label> <br>
+      <input type="text" id="nombre" name="nombre" value="{{nombres_encomienda_destinatario}}" required>
 
-                  <div>
-                    <label>Id: </label>
-                    <input type="text" name="id_detalle_encomienda" value="{{id_detalle_encomienda}}" readonly  >
-                  </div>
+      <label id="numeroce" for="apellido">Numero de Cedula:</label>
+      <input type="text" id="cedula" name="cedula" value="{{cedula_encomienda_destinatario}}" required>
 
-                  <div>
-                    <label for="nombres_cooperativa_detalle_encomienda">Nombre de la Cooperativa:</label>
-                    <input type="text" id="nombres_cooperativa_detalle_encomienda" name="nombres_cooperativa_detalle_encomienda" value="{{nombres_cooperativa_detalle_encomienda}}" required>
-                   </div>
+      <label id="numetelef" for="apellido">Numero de Telefono:</label>
+      <input type="text" id="telefono" name="telefono" value="{{telefono_encomienda_destinatario}}" required>
 
-                  <div>
-                  <label for="tamaño_encomienda">Tamaño de encomienda:</label>
-                  <input type="number" id="tamaño_encomienda" name="tamaño_encomienda" value="{{tamaño_detalle_encomienda}}" required>
-                 </div>
-  
-                 <div>
-                 <label for="fecha_envio">Fecha y Hora de envio:</label>
-                  <input type="datetime-local" id="fecha_envio" name="fecha_envio" value="{{fecha_envio_detalle_encomienda}}" required>
-                </div> 
-  
-                <div>
-                  <label for="registro_transporte">Numero de registro de transporte:</label>
-                  <input type="number" id="registro_transporte" name="registro_transporte" value="{{numero_registro_detalle_encomienda}}" required>
-                </div>
+      <label id="calle" for="callepri">Calle Principal:</label> <br>
+      <input type="text" id="callepri" name="callepri" value="{{calle_principal_encomienda_destinatario,}}" required>
 
-                <div>
-                    <label for="peso">Peso de la Encomienda:</label>
-                    <input type="number" id="peso" name="peso" value="{{peso_detalle_encomienda}}" required>
-                </div>
-              </div>
-  
-              <button type="submit">Guardar</button>
-              <button type="submit" style="background-color: red;">Cancelar</button>
-          </form>
-      </div>
-  </body>
+      <label id="calles" for="calles">Calle Secundaria:</label>
+      <input type="text" id="callese" name="callese" value="{{calle_secundaria}}" required>
 
-  <footer id="footer" class="">
+      <label id="casa" for="numcasa">Numero de Casa:</label> 
+      <input type="text" id="numcasa" name="numcasa"  value="{{numero_casa_encomienda_destinatario}}"  required>
+        <br> <br>
+
+      <u><h3>Datos de envio</h3></u>
+
+      <label id="nameco" for="nomcoop">Nombre Cooperativa:</label> <br>
+      <input type="text" id="nomcoop" name="nomcoop" value="{{nombres_cooperativa_detalle_encomienda}}" required>
+
+      <label id="telfC" for="telefonocelu">Tamaño de encomienda:</label> <br>
+      <input type="text" id="telefonoC" name="telefonocelu" value="{{tamano_detalle_encomienda}}" required>
+
+      <label id="date" for="fecha">Fecha y hora de envio:</label> 
+      <input type="datetime-local" id="fecha" name="fecha" value="{{fecha_envio_detalle_encomienda}}" required>
+
+      <label id="numreg" for="registro">Numero de registro de transporte:</label>
+      <input type="text" id="registro" name="registro" value="{{numero_registro_detalle_encomienda}}" required>
+
+      <label id="peso" for="pesoe">Peso:</label>
+      <input type="text" id="pesoe" name="pesoe" value="{{peso_detalle_encomienda}}" required>
+        <br>
+        <br>
+      <input id="cancel" type="submit" value="Cancelar">
+      <input id="save" type="submit" value="Registrar">
+  </div>
+<!--Footer -->
+<footer id="footer" class="">
       <div class="container">
         <div class="row text-left">
-          <div class="contact">
+          <div id="contact">
             <p>Contactanos</p>
             <img id="btnwasa" src="/img/wasa.png" alt=""><br>
             <img id="btnmail" src="/img/mail.png" alt=""><br>
             <img id="btntelef" src="/img/telef.png" alt="">
+            <b><a>Whatsapp</a><br></b>
+            <a>09 3456 7890</a><br> <br>
+            <b><a>Email</a></b><br> 
+            <a>hola@tickets.com</a> <br> <br>
+            <b><a>Call Center</a></b><br> 
+            <a>+59322 3456 7891</a><br> <br>
           </div>
           <div id="destin">
-            <p>Destinos</p><br>
-            <a>Playa</a><br>
-            <a>Montaña</a><br>
-            <a>Inolvidables eventos</a>
+            <p>Destinos</p>
+            <a href="">Playa</a><br> <br>
+            <a href="">Montaña</a><br> <br>
+            <a href="">Inolvidables eventos</a>
           </div>
-          <div class="soport">
+          <div id="soport">
             <p>Soporte</p>
-            
+            <a href="">Preguntas frecuentes</a><br> <br>
+            <a href="">Política de privacidad</a><br> <br>
+            <a href="">Términos y condiciones</a><br> <br>
+            <a href="">Inolvidables eventos</a> <br>
+          </div>
+          <div id="follow">
+           <b> <p>Síguenos</p></b>
+           <a href=""><img id="ig" src="/img/insta.png" alt=""></a>
+           <a href=""><img id="fb" src="/img/fb.png" alt=""></a>
           </div>
         </div>
       </div>
-</footer>
+    </footer>
+</body>
+</from>

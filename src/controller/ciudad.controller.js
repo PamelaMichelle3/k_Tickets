@@ -7,7 +7,7 @@ ciudadCtl.mostrar = (req, res) => {
 }
 
 //mandar
-cuidadCtl.mandar = async (req, res) => {
+ciudadCtl.mandar = async (req, res) => {
     const { nombres_ciudad,provincia_ciudad, canton_ciudad} = req.body
     const nuevoEnvio = {
         nombres_ciudad,
@@ -16,6 +16,6 @@ cuidadCtl.mandar = async (req, res) => {
     }
     await orm.ciudad.create(nuevoEnvio)
     req.flash('success', 'Guardado exitosamente')
-    res.redirect('/ciudad');
+    res.redirect('/ciudades');
 }
 module.exports  = ciudadCtl

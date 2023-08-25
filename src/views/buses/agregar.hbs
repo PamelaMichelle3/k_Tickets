@@ -1,0 +1,96 @@
+<link rel="stylesheet" href="/css/transporte/agregar.css">
+<from action="/"method="post">
+<body>
+<head>
+    <div id="contendodrhe">
+        <div>
+            <div class="navbar">
+                <div id="imagen">
+                    <img src="/img/logon.png"></img></div>
+                    <a id="inicio" href="/inicio">Inicio</a>
+                    <a id="administrador" href="#">Administrador</a>
+            </div>
+            
+    </div>
+</head>
+  <div id="container">
+    <img class="fondo" src="/img/registro de transporte.jpg" alt="">
+    <h2>Registro De Transportes</h2>
+    <h3>Rutas del Transporte</h3>
+    <form action="#" method="post">
+      <label id="placa" for="placa">Numero de placa del transporte</label> <br>
+      <input type="text" id="nroplaca" name="placa" required> 
+
+      <label id="name" for="nombre">Nombre de la empresa encargada</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label id="capacidad" for="capacidad">Capacidad Maxima</label> 
+      <input type="number" id="capacidadmaxima" name="capacidad" required>
+        <br> <br><br>
+     <br> <br>
+
+      <label id="conductor" for="conductor">Conductor encargado</label> 
+      <input type="text" id="conductorencargado" name="conductor" required>
+    </form> <br>
+
+      <label id="copiloto" for="copiloto">Copiloto Asignado</label>
+      <input type="text" id="copilotoasignado" name="copiloto" required>
+
+      <label id="partida" for="partida">Partida</label> <br>
+      <input type="text" id="partidaa" name="partida" required>
+
+      <label id="destino" for="destino">Destino</label> <br>
+      <input type="text" id="destinoo" name="v" required>
+      <br><br> <br>
+        <br> <br> <br><br>
+        <br>
+
+        <div class="registrarse">
+          <button (click)="crearRegistro()">Registrar</button>
+        </div>
+        <div class="cancelar">
+          <button (click)="volverRegistro()">Cancelar</button>
+        </div>
+  </div>
+
+
+
+<footer id="footer" class="">
+      <div class="container">
+        <div class="row text-left">
+          <div id="contact">
+            <p>Contactanos</p>
+            <img id="btnwasa" src="/img/wasa.png" alt=""><br>
+            <img id="btnmail" src="/img/mail.png" alt=""><br>
+            <img id="btntelef" src="/img/telef.png" alt="">
+            <b><a>Whatsapp</a><br></b>
+            <a>09 3456 7890</a><br> <br>
+            <b><a>Email</a></b><br> 
+            <a>hola@tickets.com</a> <br> <br>
+            <b><a>Call Center</a></b><br> 
+            <a>+59322 3456 7891</a><br> <br>
+          </div>
+          <div id="destin">
+            <p>Destinos</p>
+            <a href="">Playa</a><br> <br>
+            <a href="">Montaña</a><br> <br>
+            <a href="">Inolvidables eventos</a>
+          </div>
+          <div id="soport">
+            <p>Soporte</p>
+            <a href="">Preguntas frecuentes</a><br> <br>
+            <a href="">Política de privacidad</a><br> <br>
+            <a href="">Términos y condiciones</a><br> <br>
+            <a href="">Inolvidables eventos</a> <br>
+          </div>
+          <div id="follow">
+           <b> <p>Síguenos</p></b>
+           <a href=""><img id="ig" src="/img/insta.png" alt=""></a>
+           <a href=""><img id="fb" src="/img/fb.png" alt=""></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+</body>
+</from>
+

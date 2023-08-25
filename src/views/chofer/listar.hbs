@@ -1,0 +1,97 @@
+<link rel="stylesheet" href="/css/chofer/listar.css">
+<from action="chofer/listar/"method="post">
+<body>
+<head>
+    <div id="contendodrhe">
+        <div>
+            <div class="navbar">
+                <div id="imagen">
+                    <img src="/img/logon.png"></img></div>
+                    <a id="inicio" href="#">Inicio</a>
+                    <a id="administrador" href="#">Administrador</a>
+            </div>
+            <div class="contenedorimagenes">
+          <img class="icono" src="/img/empleados.png" alt="">
+      </div>
+    </div>
+</head>
+<h1>Choferes</h1>
+<div id="contenedor1">
+    <h2>Cedula</h2>
+    <h2 class="nombre">Nombres</h2>
+    <h2 class="provincia"> Provincia</h2>
+    <h2 class="licencia">Tipo de Licencia</h2>
+</div>
+<div id="container">
+    
+    <div class="row">
+        {{#each lista}}
+        <div id="cedula">
+            <div>
+                <p>"{{id_chofer}}"</p>
+            </div>
+            <div>
+                <p>{{cedula_chofer}}</p>
+            </div>
+            <div id="nombre">
+                <p>{{nombres_chofer}}</p>
+            </div>
+            <div>
+                <p>{{nombres_chofer}}</p>
+                </div>
+        </div>
+
+        <div id="ciudad">
+            <div>
+                <p>{{id_ciudad}}</p>
+            </div>
+            <div>
+                <p>{{provincia_ciudad}}</p>
+            </div>
+    
+            <div>
+            </div>
+        </div>
+
+
+        <div id="licencia">
+            <div>
+                <p>{{id_licencia}}</p>
+            </div>
+            <div>
+                <p>{{tipo_licencia}}</p>
+            </div>
+            <div class="button">
+                <div>
+                    <a href="/licencia/editar/{{id_licencia}}"><button type="button">Editar</button></a>
+                </div></p>
+                <div>
+                    <a href="/licencia/eliminar/{{id_licencia}}"><button type="button" style="background-color: red;">Eliminar</button></a>
+                </div></p>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>
+<footer id="footer" class="">
+      <div class="container">
+        <div class="row text-left">
+          <div class="contact">
+            <p>Contactanos</p>
+            <img id="btnwasa" src="/img/wasa.png" alt=""><br>
+            <img id="btnmail" src="/img/mail.png" alt=""><br>
+            <img id="btntelef" src="/img/telef.png" alt="">
+          </div>
+          <div id="destin">
+            <p>Destinos</p><br>
+            <a>Playa</a><br>
+            <a>Montaña</a><br>
+            <a>Inolvidables eventos</a>
+          </div>
+          <div class="soport">
+            <p>Soporte</p>
+            
+          </div>
+        </div>
+      </div>
+</footer>

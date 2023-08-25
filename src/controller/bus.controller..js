@@ -18,7 +18,7 @@ busCtl.mandar = async (req, res) => {
     }
     await orm.bus.create(nuevoEnvio)
     req.flash('success', 'Guardado exitosamente')
-    res.redirect('/buses/listar/' + id)
+    res.redirect('/buses/listar/'+ id)
 }
 
 busCtl.listar = async (req, res) => {
@@ -43,17 +43,17 @@ busCtl.actualizar = async (req, res) => {
         horario_bus,
         placa_bus
     }
-    await orm.bus.findOne({ where: { id_bus: ids } })
+    await orm.bus.findOne({ where: { id_bus: id } })
         .then(actualizar => {
             actualizar.update(nuevoEnvio)
         })
     req.flash('success', 'Actualizado exitosamente')
-    res.redirect('/buses/listar/' + id);
+    res.redirect('/buses/listar/');
 }
 busCtl.eliminar = async (req, res) => {
     const ids = req.params.id
     const id = req.user.id_usuario
-    await orm.bus.destroy({ where: { id_bus: ids } })
+    await orm.bus.destroy({ where: { id_bus: id } })
         .then(() => {
             req.flash('success', 'Eliminado exitosamente')
             res.redirect('/buses/listar/' + id);

@@ -2,7 +2,7 @@ const encargadoCtl = {}
 const sql = require('../Database/dataBase.sql')
 const orm = require('../Database/dataBase.orm')
 
-empleadoCtl.mostrar = (req, res) => {
+encargadoCtl.mostrar = (req, res) => {
     res.render('encargados/agregar');
 }
 

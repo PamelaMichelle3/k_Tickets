@@ -1,0 +1,238 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+#contenedorhe{
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+}
+#contenedor{
+  position: re;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+h1{
+  text-align: center;
+}
+
+h2 {
+  position: absolute;
+  left: 100px;
+  top: 727px;
+}
+
+ .encargado{
+  position: absolute;
+  top: 730px;
+  left: 1050px;
+} 
+
+.ruta{
+  position: absolute;
+  top: 730px;
+  left: 500px;
+}
+
+.horarios{
+  position: absolute;
+  top: 730px;
+  left: 800px;
+}
+.navbar {
+    background-color: #1D202B;
+    overflow: hidden;
+  }
+
+  .navbar a {
+    float: left;
+    display: block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  .navbar a:hover {
+    color: rgb(161, 157, 157);
+  }
+#imagen{
+  width: 100%;
+  height: 100%;
+  max-width: 50%;
+  max-height: 100%;
+}
+#imagen img{
+  width: 20%;
+  height: 40%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.icono {
+  width: 4%; 
+  height: 10%;
+  position: absolute;
+  left: 1260px;
+  top: -4px;
+  padding: 9px 0;
+}
+#inicio{
+  position: absolute;
+  left: 1000px;
+}
+
+#administrador{
+  position: absolute;
+  left: 1100px;
+}
+
+.row{
+  max-width: 2000px;
+  height: 310px;
+  margin: 80px 110px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgb(0, 0, 0);
+  color: #000000;
+}
+
+#container .fondo{
+  opacity: 0.5;
+  width: 1129px;
+  height: 575px;
+  position: absolute;
+  left: 110px;
+  top: 213px;
+
+}
+.row #cooperativa{
+  position: absolute;
+  left: 135px;
+  top: 820px;
+}
+
+.row #ruta{
+  position: absolute;
+  left: 490px;
+  top: 795px;
+}
+
+.row #horario{
+  position: absolute;
+  left: 800px;
+  top: 785px;
+}
+
+.row #nombres{
+  position: absolute;
+  left: 220px;
+  top:0px;
+}
+
+.button{
+  position: absolute;
+  top: 10px;
+  left: 360px;
+
+}
+
+
+  #footer{
+    background-color: #1D202A;
+    position: relative;
+    top: 100px;
+    padding: 100px; 
+  }
+  #footer p{
+    position: absolute;
+    color: white;
+    top: 35px;
+  }
+  #contact{
+    position: absolute;
+  }
+  #contact p{
+    position: absolute;
+    top: -65px;
+  }
+  #contact a{
+    position: relative;
+    color: white;
+    left: 80px;
+    top: -50px;
+  }
+  #btnwasa{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    top: 0px;
+  }
+  #btnmail{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    top: 75px;
+  }
+  #btntelef{
+    position: absolute;
+    height: 40px;
+    width: 40px; 
+    top: 145px;
+  }
+  #inf a{
+    position: absolute;
+    left: 350px;
+    color: rgb(124, 124, 124);
+  }
+  #destin a{
+    position: absolute;
+    left: 600px;
+    color: rgb(124, 124, 124);
+  }
+  #destin p{
+    position: absolute;
+    left: 600px;
+    color: white;
+  }
+  .soport p{
+    left: 800px;
+  }
+  #soport a{
+    position: absolute;
+    left: 800px;
+    color: rgb(124, 124, 124);
+  }
+  #soport p{
+    position: absolute;
+    left: 800px;
+    color: white;
+  }
+  #follow{
+    position: absolute;
+    top: 0px;
+    left: 1030px;
+  }
+  #fb{
+    position: absolute;
+    height: 40px;
+    width: 40px; 
+    top: 80px;
+  }
+  #ig{
+    position: absolute;
+    height: 40px;
+    width: 40px; 
+    top: 80px;
+    left: 50px;
+  }

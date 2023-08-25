@@ -1,0 +1,117 @@
+<link rel="stylesheet" href="/css/transporte/agregar.css">
+<from action="/"method="post">
+<body>
+<head>
+    <div id="contendodrhe">
+        <div>
+            <div class="navbar">
+                <div id="imagen">
+                    <img src="/img/logon.png"></img></div>
+                    <a id="inicio" href="#">Inicio</a>
+                    <a id="administrador" href="#">Administrador</a>
+            </div>
+            <div class="contenedorimagenes">
+          <img class="icono" src="/img/empleados.png" alt="">
+      </div>
+    </div>
+</head>
+<h1>Buses</h1>
+<div id="contenedor">
+    <h2>Nombre de la Cooperativa</h2>
+    <h2 class="ruta">Ruta</h2>
+    <h2 class="horarios"> Horarios</h2>
+    <h2 class="encargado">Encargado</h2>
+
+    <div class="row">
+        {{#each lista}}
+        <div id="cooperativa">
+            <div>
+                <p>{{id_cooperativa}}</p>
+            </div>
+            <div>
+                <p>{{nombres_cooperativa}}</p>
+            </div>
+            <div>
+            </div>
+        </div>
+
+        <div id="ruta">
+            <div>
+                <p>{{id_ruta}}</p>
+            </div>
+            <div>
+                <p>{{partida_ruta}}</p>
+            </div>
+            <div>
+                <p>{{destina_ruta}}</p>
+            </div>
+            <div>
+            </div>
+        </div>
+
+        <div id="horario">
+            <div>
+                <p>{{id_cooperativa}}</p>
+            </div>
+            <div>
+                <p>{{horario_cooperativa}}</p>
+            </div>
+        <div id="nombres">
+                <p>{{nombres_chofer}}</p>
+            </div>
+            <div>
+            <div class="button">
+                <div>
+                    <a href="/licencia/editar/{{id_licencia}}"><button type="button">Editar</button></a>
+                </div></p>
+                <div>
+                    <a href="/licencia/eliminar/{{id_licencia}}"><button type="button" style="background-color: red;">Eliminar</button></a>
+                </div></p>
+            </div>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>
+
+
+
+<footer id="footer" class="">
+      <div class="container">
+        <div class="row text-left">
+          <div id="contact">
+            <p>Contactanos</p>
+            <img id="btnwasa" src="/img/wasa.png" alt=""><br>
+            <img id="btnmail" src="/img/mail.png" alt=""><br>
+            <img id="btntelef" src="/img/telef.png" alt="">
+            <b><a>Whatsapp</a><br></b>
+            <a>09 3456 7890</a><br> <br>
+            <b><a>Email</a></b><br> 
+            <a>hola@tickets.com</a> <br> <br>
+            <b><a>Call Center</a></b><br> 
+            <a>+59322 3456 7891</a><br> <br>
+          </div>
+          <div id="destin">
+            <p>Destinos</p>
+            <a href="">Playa</a><br> <br>
+            <a href="">Montaña</a><br> <br>
+            <a href="">Inolvidables eventos</a>
+          </div>
+          <div id="soport">
+            <p>Soporte</p>
+            <a href="">Preguntas frecuentes</a><br> <br>
+            <a href="">Política de privacidad</a><br> <br>
+            <a href="">Términos y condiciones</a><br> <br>
+            <a href="">Inolvidables eventos</a> <br>
+          </div>
+          <div id="follow">
+           <b> <p>Síguenos</p></b>
+           <a href=""><img id="ig" src="/img/instagram.png" alt=""></a>
+           <a href=""><img id="fb" src="/img/facebook.png" alt=""></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+</body>
+</from>
+
