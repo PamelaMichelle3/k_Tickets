@@ -1,8 +1,7 @@
-<link rel="stylesheet" href="/src/public/css/editar/listar.css">
+<link rel="stylesheet" href="/css/encomienda/editar.css">
 {{#each lista}}
-<form action="/empleado/editar/{{id_empleado}}" method="post">
+<form action="/encomienda/editar/{{id_encomienda_remitente}}" method="post">
 
-  <head>
 
     <head>
       <div id="contendodrhe">
@@ -11,57 +10,68 @@
             <div id="imagen">
               <img src="/img/logon.png"></img>
             </div>
-            <a id="inicio" href="/views/inicio.hbs">Inicio</a>
-            <a id="administrador" href="#">Administrador</a>
-            <img id="img2" src="/img/perfil.png" alt="">
+            <a id="inicio" href="#">Inicio</a>
+            <button id="boton" type="button" href="#">Ingresar</button>
           </div>
         </div>
     </head>
-    <h1>Registro de Cooperativas</h1>
-    <div id="contenedor">
+    <div id="container">
+      <h2>Registro de Encomiendas</h2>
+      <u>
+        <h3>Remitente</h3>
+      </u>
 
-      <div class="row">
-        
-        <div id="tarjeta">
-          <u>
-            <h2>Datos De la Cooperativa</h2>
-          </u>
+      <label id="name" for="nombre">Nombres Completos:</label> <br>
+      <input type="text" id="nombre" name="nombres_remitente" value="{{nombres_remitente}}" required>
 
-          <div>
-            <input type="text" name="nombres_cooperativa" value="{{nombres_cooperativa}}" required
-              placeholder="Ingrese el titulo del video ">
-          </div>
-          <div>
-            <input type="text" name="numero_identificacion_cooperativa" value="{{numero_identificacion_cooperativa}}" required
-              placeholder="Ingrese el titulo del video ">
-          </div>
-          <div>
-            <input type="text" name="numero_transporte_cooperativa" value="{{numero_transporte_cooperativa}}" required
-              placeholder="Ingrese el titulo del video ">
+      <label id="numeroce1" for="apellido"> Cedula:</label>
+      <input type="text" id="cedula1" name="cedula_remitente" value="{{cedula_remitente}}" required>
 
-          </div>
-           <div>
-            <select id="horarioSele" name="horario_cooperativa" value="{{horario_cooperativa}}" required>
-              <option value="horario1">7:00 am a 13:00pm</option>
-              <option value="horario2">15:00pm a 18:00pm</option>
-              <option value="horario3">19:00pm a 23:00pm</option> <br>
-            </select>
-          </div>
+      <label id="numetelef" for="telefono"> Telefono:</label>
+      <input type="text" id="telefono" name="telefono_encomienda_remitente"  value="{{telefono_encomienda_remitente}}" required>
 
-          <div>
-            <input type="text" name="contactos_cooperativa" value="{{contactos_cooperativa}}" required
-              placeholder="Ingrese el titulo del video ">
+      <br> <br>
+      <label id="correoele" for="correo">Correo Electronico:</label> <br>
+      <input type="email" id="correo" name="email_remitente" value="{{email_remitente}}" required>
+      <br> <br>
 
-          </div>
-          <div>
-            <input type="text" name="email_cooperativa" value="{{email_cooperativa}}" required
-              placeholder="Ingrese el titulo del video ">
-          </div>
-         
-          
-          <div id="boton">
-            <button type="submit">Actualizar</button>
-          </div>
+      <u>
+        <h3>Datos de envio</h3>
+      </u>
+
+      <label id="nameco" for="nomcoop"> Nombres Completos :</label> <br>
+      <input type="text" id="nomcoop" name="nombres_destinatario" value="{{nombres_destinatario}}" required>
+
+      <label id="nameco" for="nomcoop">Numero de cedula :</label> <br>
+      <input type="text" id="nomcoop" name="cedula_destinatario" value="{{cedula_destinatario}}" required>
+
+      <label id="telfC" for="telefonocelu">Direccion :</label>
+      <input type="text" id="telefonoC" name="direccion_destinatario" value="{{direccion_destinatario}}" required>
+
+
+      <label id="numreg" for="registro">telefono encomienda destinatario:</label>
+      <input type="text" id="registro" name="telefono_destinatario"  value="{{telefono_destinatario}}" required>
+
+      <u>
+        <h3>Destinatario</h3>
+      </u>
+
+      <label id="name" for="nombre">Nombres Cooperativa:</label> <br>
+      <input type="text" id="nombre" name="nombres_cooperativa_detalle_encomienda"  value="{{nombres_cooperativa_detalle_encomienda}}" required>
+
+      <label id="numeroce2" for="apellido">Cedula:</label>
+      <input type="text" id="cedula2" name="tamano_detalle_encomienda" value="{{tamano_detalle_encomienda}}" required>
+
+      <label id="numetelef" for="apellido">Fecha envio:</label>
+      <input type="datetime-local" id="fecha" name="fecha_envio_detalle_encomienda" value="{{fecha_envio_detalle_encomienda}}" required> <br>
+
+      <label id="calle" for="callepri">numero registro detalle encomienda:</label> <br> <br>
+      <input type="text" id="callepri" name="numero_registro_detalle_encomienda"  value="{{numero_registro_detalle_encomienda}}" required>
+     
+      <div id="boton">
+        <button type="submit">Actualizar</button>
+      </div>
+
 </form>
 {{/each}}
 </div>

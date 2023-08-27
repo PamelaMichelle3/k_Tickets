@@ -1,7 +1,11 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
+  background-color: #e5e5f7;
+  background-image:  radial-gradient(#040a84 0.75px, transparent 0.75px), radial-gradient(#040a84 0.75px, #e5e5f7 0.75px);
+  background-size: 30px 30px; 
+  background-position: 0 0,15px 15px;
+
 }
 #img2{
   position: relative;
@@ -21,15 +25,7 @@ body {
   max-width: 100%;
   max-height: 100%;
 }
-#contenedor{
-  position: relative;
-  top: 0%;
-  left: 0%;
-  width: 100%;
-  height: 100%;
-  max-width: 100%;
-  max-height: 100%;
-}
+
 .navbar {
     background-color: #1D202B;
     overflow: hidden;
@@ -45,8 +41,8 @@ body {
   }
 
   .navbar a:hover {
-    background-color: #ddd;
-    color: black;
+
+    color: rgb(165, 165, 165);
   }
 #imagen{
   width: 100%;
@@ -61,77 +57,86 @@ body {
   background-size: cover;
   background-attachment: fixed;
 }
-#boton{
-  width: 160px;
-  height: 48px;
-  background-color: #F28705;
-  border: none;
-  color: white;
-  padding: 5px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 20px;
-  border-radius: 30px;
-  right: 100px;
-  position: absolute;
-}
+
 #inicio{
   position: absolute;
   left: 650px;
 }
 
-  #administrador{
+#administrador{
     position: absolute;
     left: 1000px;
   }
   
 #container{
-    max-width: 2000px;
-    margin: 50px 110px;
-    padding: 20px;
-    box-shadow: 0px 0px 10px rgb(0, 0, 0);
-    color: #000000;
-}
-
-#container .fondo{
-    opacity: 0.5;
-    width: 1060px;
-    height: 575px;
-    position: absolute;
-    left: 110px;
-    top: 213px;
-
-}
-#container h2{
     position: relative;
-    text-align: center;
+      width: 1000px;
+      max-width: 1000px;
+      height: 655px;
+      margin: 75px 160px;
+      padding: 15px;
+      box-shadow: 0px 0px 20px#05198b;
+      background-color:#b3b3b3;
+      color: #000000;
+      border-radius: 100px;
+  }
+  
+.fondo{
+     opacity: 0.6;
+      width: 1000px;
+      height: 655px;
+      position: relative;
+      left: -15px;
+      top: -15px;
+      border-radius: 100px;
+  
+}
+ h2{
+  text-align: center;
+    position: relative;
+    top: -710px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+h3 {
+  position: relative;
+  top: -705px;
+  left: 35px;
+  color: #ffffff;
+  text-decoration: underline;
+
 }
 #name{
     font-family: Arial, Helvetica, sans-serif;
-    position: absolute;
-    top: 225px;
-    left: 526px;
+    position: relative;
+    top: -720px;
+    left: 110px;
+    color: #ffffff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
 }
 #nombre{
-    position: absolute;
-    right: 460px;
-    width: 310px;
+    position: relative;
+    right: -25px;
+    top: -675px;
+    width: 260px;
     height: 30px;
     border-radius: 9px;
     padding: 0px, 31px, 0px, 7px;
     border-color: #000000;
     border-width: 2px;
+    border-radius: 30px;
 }
 #apelli{
     position: relative;
-    left: 470px;
-    top: -30px;
-    font-family: Arial, Helvetica, sans-serif;
+    left: 115px;
+    top: -715px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #ffffff;
 }
 #apellido{
-    position: absolute;
-    right: 120px;
+    position: relative;
+    top: -675px;
+    right: -30px;
     width: 260px;
     height: 30px;
     border-radius: 9px;
@@ -139,249 +144,264 @@ body {
     gap: 10px;
     border-color: #000000;
     border-width: 2px;
+    border-radius: 30px;
 }
 #date{
     position: relative;
-    left: 785px;
-    top: -75px;
-    font-family: Arial, Helvetica, sans-serif;
+    left:715px;
+    top: -730px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #ffffff;
 }
 #fecha_nacimiento{
     position: relative;
-    left: 610px;
-    top: -30px;
+    left: 550px;
+    top: -685px;
     width: 260px;
     height: 30px;
     border-radius: 9px;
     border-color: #000000;
     border-width: 2px;
+    border-radius: 30px;
 }
 #numce{
     position: relative;
     left: 0px;
-    top: -6px;
-    font-family: Arial, Helvetica, sans-serif;
+    top: -685px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #ffffff;
 }
 #cedula{
     position: relative;
     right: 0px;
-    width: 310px;
+    top: -675px;
+    width: 260px;
     height: 30px;
     border-radius: 9px;
     border-color: #000000;
     border-width: 2px;
+    border-radius: 30px;
 }
 #sexo{
     position: relative;
     left:0px;
-    top: -15px;
-    font-family: Arial, Helvetica, sans-serif;
+    top: -675px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: #ffffff;
 }
 #sexoSele{
     position: relative;
-    right: 45px;
-    top: 30px;
-    width: 310px;
+    right: 38px;
+    top: -625px;
+    width: 260px;
     height: 30px;
     border-radius: 3px;
     border-color: #000000;
     border-width: 2px;
+    border-radius: 30px;
 }
 
 #estado{
     position: relative;
-    left: 40px;
-    top: -15px;
+    left: 70px;
+    top: -675px;
     font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
 }
 
 #estadoCivil{
     position: relative;
-    right: 58px;
-    top: 30px;
-    width: 310px;
+    right: 30px;
+    top: -625px;
+    width: 260px;
     height: 30px;
     border-radius: 3px;
     border-color: #000000;
     border-width: 2px;
+    border-radius: 30px;
 
 }
 #canton{
     position: relative;
-    left: 480px;
-    top: -60px;
-    font-family: Arial, Helvetica, sans-serif;
+    left: 455px;
+    top: -700px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: #ffffff;
 }
 #cantonIn{
-    top: -53px;
+    top: -695px;
     position: relative;
-    right: -770px;
+    right: -705px;
     width: 260px;
     height: 30px;
     border-radius: 9px;
     border-color: #000000;
     border-width: 2px;
+    border-radius: 30px;
 }
 
 #parroquia{
     position: relative;
-    left: 20px;
-    top: -25px;
-    font-family: Arial, Helvetica, sans-serif;
+    left: 40px;
+    top: -670px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #ffffff;
 }
 
 #parroquiaIn {
-    top:-17px;
+    top:-655px;
     position: relative;
-    right: -390px;
-    width: 310px;
+    right: -365px;
+    width: 260px;
     height: 30px;
     border-radius: 9px;
     border-color: #000000;
     border-width: 2px;
+    border-radius: 30px;
 }
 #pronvin{
     position: relative;
     left: 0px;
-    top: -25px;
-    font-family: Arial, Helvetica, sans-serif;
+    top: -670px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #ffffff;
 }
 #provincia{
-    top: 20px;
+    top: -620px;
     position: relative;
     right: 70px;
-    width: 310px;
+    width: 260px;
     height: 30px;
     border-radius: 9px;
     border-color: #000000;
     border-width: 2px;
+    border-radius: 30px;
 }
 #direccion{
     position: relative;
     left: -260px;
-    top: -5px;
-    font-family: Arial, Helvetica, sans-serif;
+    top: -640px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #ffffff;
 }
 #direccionn{
-    top: 9px;
+    top: -630px;
     position: relative;
     right: 0px;
-    width: 310px;
+    width: 260px;
     height: 30px;
     border-radius: 9px;
     border-color: #000000;
     border-width: 2px;
+    border-radius: 30px;
 }
 #licencia{
     position: relative;
-    left: 90px;
-    top: -40px;
-    font-family: Arial, Helvetica, sans-serif;
+    left: 115px;
+    top: -670px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #ffffff;
 }
 #tipolicencia{
     position: relative;
-    right: 40px;
-    top: 10px;
-    width: 310px;
+    right: 20px;
+    top: -630px;
+    width: 260px;
     height: 30px;
     border-radius: 3px;
     border-color: #000000;
     border-width: 2px;
+    border-radius: 30px;
 }
 #emision{
     position: relative;
-    left: -250px;
-    top: 19px;
-    font-family: Arial, Helvetica, sans-serif;
+    left: -260px;
+    top: -619px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #ffffff;
 }
 #fechaemision{
     position: relative;
     right: 390px;
-    top: 65px;
-    width: 310px;
+    top: -575px;
+    width: 260px;
     height: 30px;
     border-radius: 9px;
     border-color: #000000;
     border-width: 2px;
+    border-radius: 30px;
 }
 
 #vencimiento{
     position: relative;
-    left: 410px;
-    top: -40px;
-    font-family: Arial, Helvetica, sans-serif;
+    left: 380px;
+    top: -675px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #ffffff;
 }
 #fechavencimiento{
-    top: 5px;
+    top: -635px;
     position: relative;
-    right: -230px;
-    width: 310px;
+    right: -210px;
+    width: 260px;
     height: 30px;
     border-radius: 9px;
     border-color: #000000;
     border-width: 2px;
-}
-#telefc{
+    border-radius: 30px;
+  
+  }
+#telfC{
     position: relative;
-    left: 70px;
-    top: -25px;
-    color: #000000;
+    left: 720px;
+    top: -735px;
+    color: #ffffff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 #telefonoC{
-    top: 11px;
+    top: -728px;
     position: relative;
-    right: -5px;
-    width: 310px;
+    right: -710px;
+    width: 260px;
     height: 30px;
     border-radius: 9px;
     border-color: #000000;
     border-width: 2px;
+    border-radius: 30px;
 }
 #email{
     position: relative;
-    left: 50px;
-    top: -40px;
-    font-family: Arial, Helvetica, sans-serif;
+    left: 70px;
+    top: -665px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #ffffff;
 }
 #Email{
-    top: -28px;
+    top: -665px;
     position: relative;
-    right: -775px;
+    right: -705px;
     width: 260px;
     height: 30px;
     border-radius: 9px;
     border-color: #000000;
     border-width: 2px;
+    border-radius: 30px;
 }
-#cel{
-    position: relative;
-    left: 490px;
-    top: -130px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-#cell{
-    position: relative;
-    right: -410px;
-    top: -86px;
-    width: 260px;
-    height: 30px;
-    border-radius: 9px;
-    border-color: #000000;
-    border-width: 2px;
-}
+
 button {
   background-color: #4CAF50;
   color: white;
   border: none;
   padding: 10px 20px;
-  border-radius: 5px;
+  border-radius: 15px;
   float: left;
   margin-right: 10px;
   cursor: pointer;
   margin-bottom: 10px;
   position: relative;
-  left: 800px;
-  top: -24px;
+  left: 430px;
+  top: -715px;
+  border-top-left-radius: 0cm;
 }
 
 .registrarse button {

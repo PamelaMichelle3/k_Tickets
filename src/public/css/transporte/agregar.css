@@ -1,9 +1,13 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-  }
-#contenedorhe{
+    background-color: #e5e5f7;
+    background-image:  radial-gradient(#040a84 0.75px, transparent 0.75px), radial-gradient(#040a84 0.75px, #e5e5f7 0.75px);
+    background-size: 30px 30px; 
+    background-position: 0 0,15px 15px;
+}
+
+    #contenedorhe{
     position: absolute;
     top: 0%;
     left: 0%;
@@ -77,146 +81,190 @@ body {
   }
   
 #container{
-    max-width: 2000px;
-    margin: 50px 110px;
-    padding: 20px;
-    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+  position: relative;
+    width: 1000px;
+    max-width: 1000px;
+    height: 525px;
+    margin: 75px 160px;
+    padding: 15px;
+    box-shadow: 0px 0px 20px#05198b;
+    background-color:#b3b3b3;
     color: #000000;
+    border-radius: 100px;
 }
 
-#container .fondo{
-    opacity: 0.5;
-    width: 1060px;
-    height: 470px;
-    position: absolute;
-    left: 110px;
-    top: 200px;
+.fondo{
+   opacity: 0.6;
+    width: 1000px;
+    height: 525px;
+    position: relative;
+    left: -15px;
+    top: -62px;
+    border-radius: 100px;
 
 }
 #container h2{
     position: relative;
     text-align: center;
+    top: -60px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #000000;
+}
+#container h3{
+  position: relative;
+  text-align: left;
+  top: -350px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: #ffffff;
 }
 #name{
-    font-family: Arial, Helvetica, sans-serif;
-    position: absolute;
-    top: 240px;
-    left: 620px;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+    position: relative;
+    top: -635px;
+    left: 75px;
+    color: #ffffff;
 }
 #nombre{
-    position: absolute;
-    right: 270px;
-    top: 270px;
-    width: 400px;
+    position: relative;
+    right: 175px;
+    top: -590px;
+    width: 265px;
     height: 30px;
     border-radius: 5px;
     padding: 0px, 31px, 0px, 7px;
     border-color: #000000;
     border-width: 2px;
+    border-radius: 30px;
+  
+ 
 }
 #placa{
     position: relative;
-    left: 0px;
-    top: 60px;
-    font-family: Arial, Helvetica, sans-serif;
+    left: 12px;
+    top: -595px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: #ffffff;
 }
-#nroplaca{
-    position: absolute;
-    right: 845px;
-    top: 270px;
-    width: 310px;
-    height: 30px;
-    border-radius: 5px;
-    padding: 0px, 31px, 0px, 7px;
-    gap: 10px;
+
+#nroplaca {
     border-color: #000000;
     border-width: 2px;
+    width: 265px;
+    height: 30px;
+    border-radius: 30px;
+    position: relative;
+    top: -590px;
+
+   
+
 }
 
 #capacidad{
     position: relative;
-    left: 0px;
-    top: 125px;
-    font-family: Arial, Helvetica, sans-serif;
+    left:-90px;
+    top: -635px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: #ffffff;
 }
 #capacidadmaxima{
     position: relative;
-    right: 140px;
-    top: 160px;
-    width: 310px;
+    left: 685px;
+    top: -625px;
+    width: 265px;
     height: 30px;
     border-radius: 5px;
     border-color: #000000;
     border-width: 2px;
+    border-radius: 30px;
+
+  
 }
 #conductor{
     position: relative;
-    left:390px;
-    top:-6px;
-    font-family: Arial, Helvetica, sans-serif;
+    left:12px;
+    top:-700px;
+    border-radius: 30px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: #ffffff;
 }
 #conductorencargado{
     position: relative;
-    right:  -230px;
-    top: 28px;
-    width: 310px;
+    right: 150px;
+    top: -655px;
+    width: 265px;
     height: 30px;
     border-radius: 5px;
     border-color: #000000;
     border-width: 2px;
+    border-radius: 30px;
+
+
 }
 
 #copiloto{
     position: relative;
-    left: 790px;
-    top: -65px;
-    font-family: Arial, Helvetica, sans-serif;
+    left: 350px;
+    top: -760px;
+    border-radius: 30px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: #ffffff;
 }
 
 #copilotoasignado{
     position: relative;
-    right: -650px;
-    top: -30px;
-    width: 250px;
+    right: -205px;
+    top: -715px;
+    width: 265px;
     height: 30px;
     border-radius: 3px;
     border-color: #000000;
     border-width: 2px;
+    border-radius: 30px;
+   
+
 
 }
 #partida{
     position: relative;
-    left: -300px;
-    top: 135px;
-    font-family: Arial, Helvetica, sans-serif;
+    left: -383px;
+    top: -600px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: #ffffff;
 }
 #partidaa{
-    top: 140px;
+    top: -595px;
     position: relative;
-    right: -90px;
-    width: 310px;
+    right: -10px;
+    width: 265px;
     height: 30px;
     border-radius: 10px;
     border-color: #000000;
     border-width: 2px;
+    border-radius: 30px;
+
+
 }
 
 #destino{
     position: relative;
-    left: 315px;
-    top: 100px;
-    font-family: Arial, Helvetica, sans-serif;
+    left: 90px;
+    top: -635px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: #ffffff;
 }
 
 #destinoo {
-    top:105px;
+    top:-630px;
     position: relative;
-    right: -620px;
-    width: 310px;
+    right: -350px;
+    width: 265px;
     height: 30px;
     border-radius: 10px;
     border-color: #000000;
     border-width: 2px;
+    border-radius: 30px;
+
+   
 }
 
 button {
@@ -224,14 +272,15 @@ button {
   color: white;
   border: none;
   padding: 10px 20px;
-  border-radius: 5px;
+  border-radius: 15px;
   float: left;
   margin-right: 10px;
   cursor: pointer;
   margin-bottom: 10px;
   position: relative;
-  left: 785px;
-  top: -35px;
+  left: 400px;
+  top: -725px;
+  border-top-left-radius: 0cm;
 }
 
 .registrarse button {
@@ -251,7 +300,7 @@ button {
   #footer{
     background-color: #1D202A;
     position: relative;
-    top: 100px;
+    top: 135px;
     padding: 100px; 
   }
   #footer p{

@@ -1,51 +1,74 @@
-<link rel="stylesheet" href="/src/public/css/cooperativa/listar.css">
-<form action="empleado/listar/" method="get"></form>
+<link rel="stylesheet" href="/src/public/css/Encomienda/listar.css">
+<form action="encomienda/listar/" method="get"></form>
 <head>
-   <head>
     <div id="contendodrhe">
         <div>
             <div class="navbar">
                 <div id="imagen">
                     <img src="/img/logon.png"></img></div>
-                    <a id="inicio" href="/views/inicio.hbs">Inicio</a>
-                    <a id="administrador" href="#">Administrador</a>
-                    <img id="img2" src="/img/perfil.png" alt="">
+                    <a id="inicio" href="#">Inicio</a>
+                    <button id="boton" type="button" href="#">Ingresar</button>
             </div>
     </div>
 </head>
-<h1>Registro de las Cooperativas</h1>
+<h1>Registro de Encomiendas</h1>
 <div id="contenedor">
     
     <div class="row">
         {{#each lista}}
         <div id="tarjeta">
-            <u><h2>Datos de la Cooperativas</h2></u>
+            <u><h2>Remitente</h2></u>
             <div>
-                <p>{{nombres_cooperativa}}</p>
+                <p>{{nombres_remitente}}</p>
             </div>
             <div>
-                <p>{{numero_identificacion_cooperativa}}</p>
+                <p>{{cedula_remitente}}</p>
             </div>
             <div>
-                <p>{{numero_transporte_cooperativa}}</p>
+                <p>{{telefono_encomienda_remitente}}</p>
             </div>
             <div>
-                <p>{{horario_cooperativa}}</p>
+                <p>{{email_remitente}}</p>
             </div>
             <div>
-                <p>{{contactos_cooperativa}}</p>
+                
+        <div id="tarjeta">
+            <u><h2>Destinatario</h2></u>
+             <div>
+                <p>{{nombres_destinatario}}</p>
             </div>
             <div>
-                <p>{{email_cooperativa}}</p>
+                <p>{{cedula_destinatario}}</p>
             </div>
             <div>
+                <p>{{direccion_destinatario}}</p>
+            </div>
+            <div>
+                <p>{{telefono_destinatario}}</p>
+            </div>
+             <div id="tarjeta">
+            
+            <u><h2>Datos de envio</h2></u>
+
+            <div>
+                <p>{{nombres_cooperativa_detalle_encomienda}}</p>
+            </div>
+            <div>
+                <p>{{tamano_detalle_encomienda}}</p>
+            </div>
+            <div>
+                <p>{{fecha_envio_detalle_encomienda}}</p>
+            </div>
+            <div>
+                <p>{{numero_registro_detalle_encomienda}}</p>
+            </div>            
+            </div>
                 <div>
-                    <a href="/cooperativa/editar/{{id_cooperativa}}"><button type="button">Editar</button></a>
-                </div></p>
+                    <a href="/encomienda/editar/{{id_encomienda_remitente}}"><button type="button">Editar</button></a>
+                </div>
                 <div>
-                    <a href="/cooperativa/eliminar/{{id_cooperativa}}"><button type="button" style="background-color: red;">Eliminar</button></a>
-                </div></p>
-            </div>
+                    <a href="/encomienda/eliminar/{{id_encomienda_remitente}}"><button type="button" style="background-color: red;">Eliminar</button></a>
+                </div>
         </div>
         {{/each}}
     </div>
@@ -54,36 +77,22 @@
 <footer id="footer" class="">
       <div class="container">
         <div class="row text-left">
-          <div id="contact">
+          <div class="contact">
             <p>Contactanos</p>
             <img id="btnwasa" src="/img/wasa.png" alt=""><br>
             <img id="btnmail" src="/img/mail.png" alt=""><br>
             <img id="btntelef" src="/img/telef.png" alt="">
-            <b><a>Whatsapp</a><br></b>
-            <a>09 3456 7890</a><br> <br>
-            <b><a>Email</a></b><br> 
-            <a>hola@tickets.com</a> <br> <br>
-            <b><a>Call Center</a></b><br> 
-            <a>+59322 3456 7891</a><br> <br>
           </div>
           <div id="destin">
-            <p>Destinos</p>
-            <a href="">Playa</a><br> <br>
-            <a href="">Montaña</a><br> <br>
-            <a href="">Inolvidables eventos</a>
+            <p>Destinos</p><br>
+            <a>Playa</a><br>
+            <a>Montaña</a><br>
+            <a>Inolvidables eventos</a>
           </div>
-          <div id="soport">
+          <div class="soport">
             <p>Soporte</p>
-            <a href="">Preguntas frecuentes</a><br> <br>
-            <a href="">Política de privacidad</a><br> <br>
-            <a href="">Términos y condiciones</a><br> <br>
-            <a href="">Inolvidables eventos</a> <br>
-          </div>
-          <div id="follow">
-           <b> <p>Síguenos</p></b>
-           <a href=""><img id="ig" src="/img/insta.png" alt=""></a>
-           <a href=""><img id="fb" src="/img/fb.png" alt=""></a>
+            
           </div>
         </div>
       </div>
-    </footer>
+</footer>

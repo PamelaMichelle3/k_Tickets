@@ -1,3 +1,5 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <link rel="stylesheet" href="/css/transporte/agregar.css">
 <from action="/"method="post">
 <body>
@@ -8,14 +10,16 @@
                 <div id="imagen">
                     <img src="/img/logon.png"></img></div>
                     <a id="inicio" href="/inicio">Inicio</a>
+                    <a id="listar" href="#">Listar</a>
                     <a id="administrador" href="#">Administrador</a>
             </div>
             
     </div>
 </head>
   <div id="container">
-    <img class="fondo" src="/img/registro de transporte.jpg" alt="">
+
     <h2>Registro De Transportes</h2>
+    <img class="fondo" src="/img/registro de transporte.jpg" alt="">
     <h3>Rutas del Transporte</h3>
     <form action="#" method="post">
       <label id="placa" for="placa">Numero de placa del transporte</label> <br>
@@ -51,6 +55,7 @@
         <div class="cancelar">
           <button (click)="volverRegistro()">Cancelar</button>
         </div>
+
   </div>
 
 
